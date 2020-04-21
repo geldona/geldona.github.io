@@ -18,7 +18,8 @@ footer a {
 }
 img{
     float: right;
-    margin-top: -70px;
+    margin-top: -50px;
+    width:60%;
 }
 li {
     padding: 5px 0;
