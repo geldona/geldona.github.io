@@ -7,7 +7,7 @@ main {
     padding: 10px 50px;
 }
 h1, footer {
-    background-color: peachpuff;
+    background-color:#388067;
     color: white;
     padding: 10px;
     text-align:center;
@@ -18,9 +18,11 @@ footer a {
 }
 img{
     float: right;
-    margin-top: -60px;
-    width: 20%;
+    margin-top: -65px;
+    width: 15%;
     margin-right: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: grey;
 
 }
 li {
