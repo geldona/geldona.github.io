@@ -1,2 +1,2 @@
-
-document.getElementById('lastUpdated').textContent = "Last Updated: " + document.lastModified;
+let currentdate = document.lastModified;
+        document.getElementById("modified").textContent = currentdate;
