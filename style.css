@@ -1,5 +1,5 @@
 #content {
-    font-family: 'Cinzel';
+    font-family: 'Cinzel', sans-serif;
     width: 80%;
     max-width: 1000px;
     margin: 50px auto;
@@ -8,7 +8,7 @@ main {
     padding: 10px 50px;
 }
 h1, footer {
-    font-family: 'Cinzel', sans-serif;
+    font-family: 'Cinzel';
     background-color:#388067;
     color: white;
     padding: 10px;
