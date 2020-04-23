@@ -1,3 +1,7 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Lora&display=swap');
+
+
 #content {
     font-family: 'Cinzel', sans-serif;
     width: 80%;
@@ -8,8 +12,8 @@ main {
     padding: 10px 50px;
 }
 h1, footer {
-    font-family: 'Cinzel';
-    background-color:#0d6e05;
+    font-family:'Cinzel', sans-serif;;
+    background-color:#3b4d39;
     color: rgb(242, 255, 212);
     padding: 10px;
     text-align:center;
