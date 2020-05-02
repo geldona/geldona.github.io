@@ -8,18 +8,25 @@ h2,h3{
 }
 h2{
     margin-top:2em;
+    border: solid 2px;
+    border-radius: 2em;
+    border-color: #747A87;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 h3{
     margin-top: -0.6rem;
     margin-bottom: -1em;
+   
 }
 h1{
     font-weight: bold;
-    color: rgb(226, 239, 248 )
+    color: rgb(242, 247, 250);
 }
 h6{font-size: 1.2em;
     margin-top: -0.3em;
-    color: rgb(226, 239, 248 )
+    color: rgb(242, 247, 250);
 
 }
 
@@ -64,14 +71,14 @@ hr {
 
 footer {
     text-align: center;
-    background-color:black;
+    background-color:rgb(26, 25, 25) ;
     padding: 25px;
-    color: rgb(226, 239, 248 );
+    color: rgb(242, 247, 250);
 }
 
 
 footer a {
-    color:rgb(226, 239, 248 );
+    color:rgb(242, 247, 250);
 }
 @media screen and (min-width: 550px) {
     main {
