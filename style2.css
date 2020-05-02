@@ -6,15 +6,23 @@ h1, h2, h3, h6{
 h2,h3{
     color: rgb(26, 25, 25);
 }
+h2{
+    margin-top:2em;
+}
+h3{
+    margin-top: -0.6rem;
+    margin-bottom: -1em;
+}
 h1{
     font-weight: bold;
     color: rgb(226, 239, 248 )
 }
 h6{font-size: 1.2em;
-    margin-top: -0.5em;
+    margin-top: -0.3em;
     color: rgb(226, 239, 248 )
 
 }
+
 
 p {
     text-align: center;
@@ -36,6 +44,7 @@ img {
 }
 a {
     color: rgb(59, 45, 92);
+    
 }
 
 section {
