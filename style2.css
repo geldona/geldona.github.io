@@ -44,6 +44,7 @@ section {
     margin: 0 auto;
 }
 
+
 img {
     max-width: 400px;
     
@@ -52,6 +53,17 @@ hr {
     margin-bottom: 60px;
 }
 
+footer {
+    text-align: center;
+    background-color:black;
+    padding: 25px;
+    color: rgb(226, 239, 248 );
+}
+
+
+footer a {
+    color:rgb(226, 239, 248 );
+}
 @media screen and (min-width: 550px) {
     main {
         display: grid;
