@@ -132,7 +132,7 @@ p{
     flex: 1 1 100%;
     padding:1em;
     width: 25em;
-    height: 25em;
+    height: 18em;
     margin-bottom: 2.5em;
     
 }
@@ -143,8 +143,8 @@ p{
    
 }
 img {
-    max-width: 70%;
-    margin-left: 10em;
+    max-width: 60%;
+    margin-left: 12em;
 }
 .people1{
     background-color: transparent;
