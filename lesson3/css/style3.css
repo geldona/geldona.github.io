@@ -88,7 +88,7 @@ p{
     margin: 0 43%;
 }
 .color1{
-    font-family: 'Cinzel';
+    font-family:serif;
     background-color: rgb(238, 236, 250);
     color:black;
     max-width: 60%;
@@ -97,7 +97,7 @@ p{
     border-radius: 12px;;
 }
 .color2{
-    font-family: 'Cinzel';
+    font-family:serif;
     background-color: rgb(26, 25, 25);
     color:rgb(238, 236, 250);
     max-width: 60%;
@@ -106,7 +106,7 @@ p{
     border-radius: 10px;;
 }
 .color3{
-    font-family: 'Cinzel';
+    font-family:serif;
     background-color:rgb(130, 171, 212);
     color:black;
     max-width: 60%;
@@ -115,7 +115,7 @@ p{
     border-radius: 10px;;
 }
 .color4{
-    font-family: 'Cinzel';
+    font-family:serif;
     background-color:rgb(255, 178, 34);
     color:black;
     max-width: 60%;
