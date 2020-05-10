@@ -137,14 +137,16 @@ p{
     
 }
 .people div img{
-    max-width: 100%;
-    margin-left: 10em;
-    
-   
+    max-width: 90%;
+    margin-left: 14em;
+    padding-bottom: -1em;
+      
 }
 img {
-    max-width: 60%;
-    margin-left: 12em;
+    max-width: 40%;
+    margin-left: 16em;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 .people1{
     background-color: transparent;
