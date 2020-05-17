@@ -1,0 +1,120 @@
+  
+/*phone, mobile first */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction:  column;
+    
+  }
+  li{
+    padding: 15px;
+    display: none;
+  }
+  li:first-child{
+    display: block;
+  }
+  .responsive li{
+    display: block;
+    background-color: #D6DAD9;
+  }
+  nav ul{
+    padding: 0.5em;
+    height: 4em;
+    border-radius: 1em;
+    border-radius: 15px;
+    background-color: rgb(26, 25, 25);
+    font-family: 'Serif';
+    text-align: center;
+    justify-content: space-around;
+    font-size: large;
+    
+  }
+  nav a:hover{
+    font-size: 1.1em;
+    background-color: rgb(130, 171, 212);
+}
+ 
+
+  nav a {
+    color:rgb(238, 236, 250) ;
+    display: block;
+    text-align: center;
+    padding: 0.75em;
+    text-decoration: none;
+    font-family: 'Lato';
+    
+  }
+  body {
+    max-width: 100%;
+    margin: 1em;
+    padding: .5em;
+    display: grid;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .content{
+  max-width: 100%;
+  margin: 1em;
+  align-content: center;
+  
+  }
+  .container {
+  position: relative;
+  text-align: center;
+  color: black;
+  padding-left: 60px;
+  }
+  
+  h1, h2, h3, h4{
+  font-family: Cinzel, bold;
+  text-align: center;
+  }
+  .logo1{
+    position: absolute;
+    top: 1rem;
+    left: 10rem;
+    background-repeat: no-repeat;
+    width: 15%;
+  }
+  header h1, p{
+    color: rgb(26, 25, 25);
+    display: flex;
+    flex-direction: column;
+  }
+  
+    header, footer {
+      text-align: center;
+      color: White;
+      background-color: rgb(238, 236, 250);
+      padding: 20px;
+      border-radius: 25px;
+      max-height: 15%;
+  }
+  footer a{
+    color: black;
+  }
+  .area p{
+    border: 2px dotted rgb(221, 208, 208);
+    padding: 10px;
+    background-color: white;
+    color: black;
+  }
+  .area{
+    text-align: center;
+    display: block;
+  }
+  
+  @media screen and (min-width: 520px){
+   ul{
+    flex-direction: row;
+   } 
+   li:first-child{
+       display: none;
+   }
+   li{
+       display: block; 
+   }
+  
+  }
