@@ -82,6 +82,8 @@ ul{
     color: rgb(26, 25, 25);
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
   }
   
     header, footer {
@@ -116,5 +118,8 @@ ul{
    li{
        display: block; 
    }
-  
+   header h1, footer{
+   
+    font-size: 2rem;
+      }
   }
