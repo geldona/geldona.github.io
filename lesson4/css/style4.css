@@ -63,13 +63,14 @@ ul{
   font-family: Cinzel, bold;
   text-align: center;
   }
-  .logo1{
+  
+  
+  .logo1 {
     position: absolute;
-    
     width: 15%;
     top: 6rem;
     left: 6rem;
-  }
+}
   header h1, p{
     color: rgb(26, 25, 25);
     display: flex;
@@ -149,9 +150,10 @@ ul{
         color:  rgb(238, 236, 250);
       }
  .logo1{
-      
+  position: relative;
   top: 1rem;
   left: 4rem;
+  
       }
        
   }
