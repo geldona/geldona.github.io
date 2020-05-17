@@ -73,10 +73,10 @@ ul{
   }
   .logo1{
     position: absolute;
-    top: 1rem;
-    left: 10rem;
+    top: 5rem;
+    left: 4rem;
     background-repeat: no-repeat;
-    width: 15%;
+    width: 20%;
   }
   header h1, p{
     color: rgb(26, 25, 25);
