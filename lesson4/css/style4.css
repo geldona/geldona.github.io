@@ -1,5 +1,14 @@
   
 /*phone, mobile first */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap') ;
+@font-face {
+
+font-family : 'Cinzel';
+font-style : normal;
+font-weight : 400;
+font-display : swap;
+src : local('Cinzel Regular'), local('Cinzel-Regular'), url(https://fonts.gstatic.com/s/cinzel/v9/8vIJ7ww63mVu7gtL8Q.ttf) format('truetype');
+}
 
 ul{
   font-size: large;
