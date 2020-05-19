@@ -36,6 +36,7 @@ ul{
     padding: 0.4em;
     text-decoration: none;
     font-family: 'Lato';
+    background-color: cornflowerblue;
     
   }
   body {
@@ -126,7 +127,7 @@ ul{
    nav ul{
     padding: 0.46em;
     height: 3em;
-    background-color: rgb(26, 25, 25);
+    background-color: cornflowerblue;
     font-family: 'Serif';
     text-align: center;
     justify-content: space-around;
