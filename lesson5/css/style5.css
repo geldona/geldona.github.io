@@ -10,6 +10,10 @@ ul{
   text-align: center;
    
   }
+  .active {
+    color: black;
+    background-color:  rgb(238, 236, 250);
+}
   li{
     padding: 15px;
     display: none;
@@ -24,7 +28,7 @@ ul{
  
   nav a:hover{
     font-size: 1.1em;
-    background-color: rgb(130, 171, 212);
+    background-color: rgb(238, 236, 250);
     color: black;
 }
  
