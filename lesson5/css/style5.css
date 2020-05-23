@@ -1,0 +1,160 @@
+  
+/*mobile */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap') ;
+
+ul{
+  font-size: large;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+   
+  }
+  li{
+    padding: 15px;
+    display: none;
+  }
+  li:first-child{
+    display: block;
+  }
+  .responsive li{
+    display: block;
+    background-color: rgb(238, 236, 250);
+  }
+ 
+  nav a:hover{
+    font-size: 1.1em;
+    background-color: rgb(130, 171, 212);
+    color: black;
+}
+ 
+
+  nav a {
+    color:  rgb(26, 25, 25) ;
+    display: block;
+    text-align: center;
+    padding: 0.4em;
+    text-decoration: none;
+    font-family: 'Lato';
+    background-color: cornflowerblue;
+    
+  }
+  body {
+    max-width: 100%;
+    margin: 1em;
+    padding: .5em;
+    display: grid;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+  }
+  .content{
+  max-width: 100%;
+  margin: 1em;
+  align-content: center;
+  
+  }
+  .container {
+  position: relative;
+  text-align: center;
+  color: black;
+  padding-left: 60px;
+  }
+  
+  h1, h2, h3, h4{
+  font-family: Cinzel, bold;
+  text-align: center;
+  }
+  
+  
+  .logo1 {
+    position: absolute;
+    width: 15%;
+    top: 4rem;
+    left: 6rem;
+}
+  header h1, p{
+    color: rgb(26, 25, 25);
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+    header {
+      text-align: center;
+      color: White;
+      background-color: rgb(238, 236, 250);
+      padding: 20px;
+      border-radius: 25px;
+      max-height: 15%;
+  }
+  footer {
+    text-align: center;
+    color: White;
+    background-color: whitesmoke;
+    padding: 10px;
+        max-height: 15%;
+}
+
+  footer a{
+    color: black;
+  }
+  .area p{
+    
+    padding: 10px;
+    background-color: rgb(241, 167, 167);
+    color: black;
+    border: dotted 0.2px;
+    margin: 10px 30px;
+    
+  }
+  .area{
+    text-align: center;
+    display: block;
+  }
+  
+  @media screen and (min-width: 699px){
+    
+    header {
+      display: flex;
+      align-items:center;
+      justify-content:center;
+  }
+   
+    ul{
+    flex-direction: row;
+   } 
+   nav ul{
+    padding: 0.46em;
+    height: 3em;
+    background-color: cornflowerblue;
+    font-family: 'Serif';
+    text-align: center;
+    justify-content: space-around;
+    font-size: large;
+    margin-top: -1em;
+    
+  }
+   li:first-child{
+       display: none;
+   }
+   li{
+       display: block; 
+   }
+   header h1, footer{
+   
+    font-size: 2rem;
+      }
+      
+    
+  nav a {
+        color:  black;
+      }
+ .logo1{
+  position: relative;
+  top: 1rem;
+  left: 4rem;
+  
+      }
+       
+  }
