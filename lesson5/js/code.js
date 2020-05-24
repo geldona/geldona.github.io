@@ -14,7 +14,7 @@ let monthname  = month_name[mydate.getMonth()];
 const dateoutput = document.querySelector('.currentdate');
 dateoutput.textContent = weekname + ', ' + mydate.getDate() + " " + monthname + " " + mydate.getFullYear();
 
-
+//friday
 function fridays(){
     console.log("daytime");
      var full_date = new Date();
