@@ -216,7 +216,7 @@ ul{
    li{
        display: block; 
    }
-   header h1, footer,p{
+   header h1,p{
    
     font-size: 1.2rem;
       }
@@ -256,7 +256,9 @@ ul{
       justify-content: space-evenly;
   }
   footer p{
-      font-size: 0.45em;
+      font-size: 1em;
+      margin: 1em auto;
+    text-align: center;
   }
     }
 
