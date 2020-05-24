@@ -13,6 +13,7 @@ ul{
   .active {
     color: black;
     background-color:  rgb(238, 236, 250);
+    border: 1rem;
 }
   li{
     padding: 15px;
@@ -102,6 +103,7 @@ ul{
         margin-top: 1rem;
 }
 
+
   footer a{
     color: black;
   }
@@ -160,14 +162,26 @@ ul{
 }
 
 
- .contact{
-  background-color:  rgb(250, 204, 204);
-  width: 83%;
-  height: 4em;
-  display:block;
-  margin:0 auto;
-  
- }
+.contact{
+  max-width: 80%;
+  background-color: rgb(250, 204, 204);
+  margin: 1em auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-info{
+  grid-column: 2/3;
+  max-width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.map{
+  grid-column: 1/2;
+  max-width: 80%;
+  margin: auto;
+}
  
   
   @media screen and (min-width: 699px){
@@ -206,6 +220,7 @@ ul{
     
   nav a {
         color:  black;
+        margin-left: -0.9rem;
       }
  .logo1{
   position: relative;
