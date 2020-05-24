@@ -41,6 +41,7 @@ ul{
     text-decoration: none;
     font-family: 'Lato';
     background-color: cornflowerblue;
+    margin-left: -3rem;
     
   }
   body {
@@ -98,7 +99,7 @@ ul{
     background-color: whitesmoke;
     padding: 10px;
         max-height: 15%;
-        max-width: 32%;
+        margin-top: 1rem;
 }
 
   footer a{
@@ -217,7 +218,7 @@ ul{
   grid-template-columns:1fr 1fr;
 }
   .article-words{
-        max-width: 60%;
+       
         grid-column: 1/2;
     max-width: 80%;
     margin: auto;
