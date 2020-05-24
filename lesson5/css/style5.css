@@ -98,6 +98,7 @@ ul{
     background-color: whitesmoke;
     padding: 10px;
         max-height: 15%;
+        max-width: 32%;
 }
 
   footer a{
@@ -137,35 +138,36 @@ ul{
 .forecast-box{
     background-color:  rgb(250, 204, 204);
     width: 80%;
-    height: 4em;
+    height: 3em;
     display:block;
     margin:0 auto;
     
 }
 .article{
-    max-width: 80%;
-    background-color: rgb(250, 204, 204);
-    margin: 1em auto;
-    padding: 1em;
-    display:flex;
-    flex-direction: column;
+  max-width: 80%;
+  background-color: rgb(250, 204, 204);
+  margin: 1em auto;
+  padding: 1em;
+  display:flex;
+  flex-direction: column;
 }
-iframe{
-  max-width: 40%;
-    margin:  auto;
-    padding: 1em;
-    display:flex;
-    flex-direction:auto ;
-    
+.article-words{
+  max-width: 100%;
 }
+.article-img{
+  max-width: 100%;
+}
+
+
  .contact{
   background-color:  rgb(250, 204, 204);
-  width: 80%;
+  width: 83%;
   height: 4em;
   display:block;
   margin:0 auto;
   
  }
+ 
   
   @media screen and (min-width: 699px){
     
@@ -210,4 +212,21 @@ iframe{
   left: 4rem;
   
       }
-  
+.article{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+  .article-words{
+        max-width: 60%;
+        grid-column: 1/2;
+    max-width: 80%;
+    margin: auto;
+    
+    }
+  .article-img{
+        max-width: 60%;
+        grid-column: 2/2;
+    max-width: 80%;
+    margin: auto;
+    }
+    }
