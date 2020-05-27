@@ -181,6 +181,31 @@ ul{
   display: flex;
   flex-direction: column;
 }
+#forecast-table{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-collapse: collapse;
+  padding: 10px;
+  width: 90%;
+  
+}
+
+#forecast-table p{
+  
+  justify-self: stretch;
+  align-self: stretch;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+#forecast-table img{
+  justify-self: center;
+  padding: 5px;
+  width: 90%;
+}
+
+
+
 .map{
   grid-column: 1/2;
   max-width: 80%;
