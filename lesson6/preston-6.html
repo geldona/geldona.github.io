@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather</title>
+<meta name="description" content="preston weather">
+<link href ="/lesson6/css/style5.css" rel = "stylesheet">
+<link rel="stylesheet" href="/normalize.css">
+<link rel="icon" href="/lesson6/images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div id="fridays" style="display: block; background-color: yellow; text-align: center; padding:1em;"></div>
+    <script src='/lesson5/js/friday.js'></script>
+    <div class = "content">
+        <header>
+            
+            <img class = "logo1" src = "/lesson3/images/icon-w3.png" alt="weather icon">
+            <div class="container">
+                <div class="banner-text1">
+                <h1>The Weather Today</h1>
+                <p>Just a click away</p>
+            </div>
+        </div>
+        </header>
+        <nav>
+            <ul class = "navigation">
+                <li><a class = "ham" href = "#">&#9776; Menu</a></li>
+                <li><a href="/lesson4/preston-4.html">Home</a></li>
+                <li class='active'><a class='active' href="">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="">Storm Center</a></li>
+                <li><a href="">Gallery</a></li>
+                </ul>
+      </nav>
+        
+       <main class = "area">
+        <h2>Preston Idaho</h2>
+        <div class='hero'>
+            <div class='weather-summary'>
+                <h4>Weather Summary</h4>
+                <div id="weather-table">
+                    <div id="weather-stats">
+                        <p>Currently:</p>
+                        <p>High:</p>
+                        <p>Wind Chill:</p>
+                        <p>Humidity:</p>
+                        <p>Wind Speed:</p>
+                    </div>
+                    <div id="weather-values">
+                        <p>Heavy Winds</p>
+                        <p><span id="temp">42</span>&#0176; F</p>
+                        <p id="windChillDiv"><span id="windChill"></span>&#0176; F</p>
+                        <p>54%</p>
+                                             
+                        
+                        <p><span id="windSpeed">6</span> mph</p>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+        <div class='forecast'>
+            <h3>5 Day Forecast</h3><br>
+            <div id="forecast-table" class="content-box">
+                <p>Wed</p>
+                <p>Thu</p>
+                <p>Fri</p>
+                <p>Sat</p>
+                <p>Sun</p>
+                <img class='sun-img' src='/lesson6/images/sunny.PNG' alt='Article Image'>
+                <img class='rain-img' src='/lesson6/images/rainy.PNG' alt='Article Image'>
+                <img class='sun-img' src='/lesson6/images/sunny.PNG' alt='Article Image'>
+                <img class='cloudy-img' src='/lesson6/images/clouds.PNG' alt='Article Image'>
+                <img class='snow-img' src='/lesson6/images/snow.PNG' alt='Article Image'>
+              
+                <p>80&#0176;</p>
+                <p>74&#0176;</p>
+                <p>82&#0176;</p>
+                <p>76&#0176;</p>
+                <p>60&#0176;</p>
+            
+            </div>
+            
+        </div>
+        <div class='article'>
+            <div class='article-words'>
+                <h3>Article</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum explicabo temporibus eaque laborum neque repudiandae 
+                    hic consequatur ullam ex fugit sequi nisi, quia, 
+                    earum autem vitae atque aliquam unde.</p> 
+            </div>
+            <img class='article-img' src='/lesson6/images/rainy-rain-umbrella-weather.jpg' alt='Article Image'>
+        </div>
+            
+        <div class='contact'>
+            <img class='map' src='/lesson6/images/map.PNG' alt='Map Image'>
+            <p class='contact-info'><b>Contact Us</b> <br>  <br> tel (123)-456-789 <br>123456@321.com
+        </div>
+            
+                        
+        
+       </main>
+      
+            
+    <footer><p>&copy; GL| Idaho | </p><p class = "currentdate"></p>
+        <script src = "/lesson4/js/code.js"></script>
+        <script src="/lesson6/js/chill.js"></script>
+                </footer>
+    
+</div>
+</body>
+</html>
