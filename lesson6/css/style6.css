@@ -239,6 +239,11 @@ ul{
   
   @media screen and (min-width: 699px){
     
+    .hero {
+      
+      background-image: url(/lesson6/images/hero-img-small.jpg);
+      
+    }
     header {
       display: flex;
       align-items:center;
@@ -323,6 +328,11 @@ ul{
 
     h2 {
         font-size: 2.5em;
+    }
+    .hero {
+      
+      background-image: url(/lesson6/images/hero-img-large.jpg);
+      
     }
 
   }
