@@ -212,20 +212,18 @@ ul{
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: var(--grey);
-    
+ 
 }
 
 #weather-stats{
   text-align: right;
-  color: var(--grey);
 }
 
 
 #weather-values{
   margin: 0em;
   text-align: left;
-  color: var(--black);
+  
   padding-left: 7px;
   font-size: 2rem;
 }
