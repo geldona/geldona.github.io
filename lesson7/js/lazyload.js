@@ -25,6 +25,6 @@ io.unobserve(entry.target);
 );
 
 
-images.forEach(images => {
+images.forEach(image => {
 io.observe(image);
 });
