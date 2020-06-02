@@ -117,52 +117,15 @@ ul{
     display: block;
     max-width: 80%;
   }
-  .hero-image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-}
-.hero-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.overlay-container{
-  position: relative;
-  
-  width:90%;
-  margin: 0 auto;
-}
-#weather-summary {
-  box-shadow: 2px 5px 10px -7px var(--charcoal), -2px -5px 10px -7px white;
-  background-color: rgba(222, 244, 253, .7);
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  max-width: 250px;
-  padding: 10px;
-
-}
-
-#weather-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#weather-keys{
-  text-align: right;
-}
-
-#weather-values{
-  text-align: left;
-  padding-left: 5px;
-  
-}
-#weather-values p{
-  color: var(--middleblue)
-}
-  
+  .hero {
+    max-width: 80%;
+    background-image: url(/lesson5/images/nature-flowers-spring-cherry.jpg);
+    margin: 1em auto;
+    padding: 1em;
+    background-size: cover;
+  }
+ 
+    
   
   .forecast{
     max-width: 80%;
@@ -234,7 +197,38 @@ ul{
   padding: 5px;
   width: 90%;
 }
+.weather-summary{
+  max-width: 20em;
+  background-color: rgb(250, 204, 204);
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  opacity: 0.6;
+  
+}
 
+
+#weather-table{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: var(--grey);
+    
+}
+
+#weather-stats{
+  text-align: right;
+  color: var(--grey);
+}
+
+
+#weather-values{
+  margin: 0em;
+  text-align: left;
+  color: var(--black);
+  padding-left: 7px;
+  font-size: 2rem;
+}
 
 
 
