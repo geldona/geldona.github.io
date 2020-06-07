@@ -107,7 +107,7 @@ h4,
 h5,
 h6 {
     font-family: "Cinzel", serif;
-    color: charcoal;
+    color: black;
 }
 
 
@@ -139,7 +139,7 @@ p,
 li,
 a, figcaption {
     font-family: "Cinzel", sans-serif;
-    color: charcoal;
+    color: black;
 }
 
 img[data-src] {
@@ -173,7 +173,7 @@ figcaption{
     display: flex;
     flex-direction: column-reverse;
     background-color: cornflowerblue;
-    border-top: 1px solid charcoal;
+    border-top: 1px solid black;
 }
 
 .contact-info {
@@ -320,7 +320,7 @@ figcaption{
     #forecast-placeholder {
         width: 100%;
         height: 30px;
-        background-color: var(--middleblue);
+        background-color: black;
         display: block;
     }
 
@@ -385,12 +385,11 @@ figcaption{
     }
 
     figure:hover{
-        box-shadow: 7px 4px 24px -6px charcoal;
-        
-        
+        box-shadow: 7px 4px 24px -6px black;
+        cursor: pointer;
     }
-
-    footer {
+       
+        footer {
         max-width: 100%;
         margin: 0 auto;
     }
@@ -417,5 +416,4 @@ figcaption{
         padding-bottom: 0;
         margin-bottom: 0;
     }
-
 }
