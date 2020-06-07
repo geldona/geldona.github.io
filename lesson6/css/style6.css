@@ -12,7 +12,7 @@ ul{
   }
   .active {
     color: black;
-    background-color:  rgb(238, 236, 250);
+    background-color:  skyblue;
     border: 1rem;
 }
   li{
@@ -24,7 +24,7 @@ ul{
   }
   .responsive li{
     display: block;
-    background-color: rgb(238, 236, 250);
+    background-color: skyblue;
   }
  
   nav a:hover{
@@ -41,7 +41,7 @@ ul{
     padding: 0.4em;
     text-decoration: none;
     font-family: 'Lato';
-    background-color: rgb(250, 204, 204);
+    background-color: skyblue;
     margin-left: -3rem;
     
   }
@@ -129,7 +129,7 @@ ul{
   
   .forecast{
     max-width: 80%;
-    background-color: rgb(250, 204, 204);
+    background-color: skyblue;
     margin: 1em auto;
     padding: 1em;
     display: flex;
@@ -137,7 +137,7 @@ ul{
    
 }
 .forecast-box{
-    background-color:  rgb(250, 204, 204);
+    background-color:  skyblue;
     width: 80%;
     height: 3em;
     display:block;
@@ -146,7 +146,7 @@ ul{
 }
 .article{
   max-width: 80%;
-  background-color: rgb(250, 204, 204);
+  background-color: skyblue;
   margin: 1em auto;
   padding: 1em;
   display:flex;
@@ -162,7 +162,7 @@ ul{
 
 .contact{
   max-width: 80%;
-  background-color: rgb(250, 204, 204);
+  background-color: skyblue;
   margin: 1em auto;
   padding: 1em;
   display: grid;
@@ -256,7 +256,7 @@ ul{
    nav ul{
     padding: 0.46em;
     height: 3em;
-    background-color: rgb(250, 204, 204);
+    background-color: skyblue;
     font-family: 'Serif';
     text-align: center;
     justify-content: space-around;
