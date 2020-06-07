@@ -33,7 +33,9 @@ ul{
     color: black;
 }
  
-
+.main{
+  padding: 20px;
+}
   nav a {
     color:  rgb(26, 25, 25) ;
     display: block;
@@ -115,7 +117,7 @@ ul{
   .area{
     text-align: center;
     display: block;
-    max-width: 80%;
+    
   }
   .hero {
     max-width: 80%;
