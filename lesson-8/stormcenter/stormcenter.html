@@ -43,30 +43,30 @@
                 </h2>
     
                 <div>
-                    <label for="fullName">Full Name:</label>
+                    <label class="fullName">Full Name:</label>
                     <input type="text" id="fullName" name="fullName" pattern="[A-Za-z]{,}" required>
                 </div>
                 <div>
-                    <label for="email">Email:</label>
+                    <label class="email">Email:</label>
                     <input type="text" id="email" name="email" placeholder=" ">
                 </div>
                 <div>
-                    <label for="phone">Phone:</label>
+                    <label class="phone">Phone:</label>
                     <input type="tel" id="phone" name="phone" required>
                 </div>
                 <div>
-                    <label for="zipCode">Zip Code:</label>
+                    <label class="zipCode">Zip Code:</label>
                     <input type="number" id="zipCode" name="zipCode" required>
                 </div>
     
     <h2>Storm Information:</h2>
     
                 <div>
-                    <label for="stormDate">Storm Date:</label>
+                    <label class="stormDate">Storm Date:</label>
                     <input type="date" id="stormDate" name="stormDate">
                 </div>
                 <div>
-                    <label for="stormType">Storm Type</label>
+                    <label class="stormType">Storm Type</label>
                     <input list="stormTypes">
                     <datalist id="stormTypes">
                         <option value="Flash Flood">
@@ -77,16 +77,16 @@
                     </datalist>
                 </div>
                 <div>
-                    <label for="stormSeverity">Storm Severity:</label>
+                    <label class="stormSeverity">Storm Severity:</label>
                     <input type="range" id="rating" name="stormSeverity" value="5" min="1" max="10" class="slider"  step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
+                    <span id="ratingvalue"></span>
                 </div>
     
                 <div>
     
                 </div>
                 <div>
-                    <label for="stormRegion">Storm Region:</label>
+                    <label class="stormRegion">Storm Region:</label>
                     <select name="stormRegion" id="stormRegion">
                         <option value="Select Region" selected disabled>Select Region</option>
                         <option value="Fish Haven">Fish Haven</option>
@@ -100,15 +100,15 @@
                     <div class="nomargin">
                         <div>
                             <input type="radio" value="Yes" name="danger">
-                            <label for="yes">Yes</label>
+                            <label class="yes">Yes</label>
                         </div>
                         <div>
                             <input type="radio" value="No" name="danger">
-                            <label for="no">No</label>
+                            <label class="no">No</label>
                         </div>
                         <div>
                             <input type="radio" value="Maybe" name="danger">
-                            <label for="maybe">Maybe</label>
+                            <label class="maybe">Maybe</label>
                         </div>
                     </div>
                 </div>
