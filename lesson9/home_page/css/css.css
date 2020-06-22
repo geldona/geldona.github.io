@@ -135,6 +135,33 @@ a {
     color: black;
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: grey, -2px -5px 10px -7px white;
+    width: 75%;
+}
+
+.card img{
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.homemotto{
+    font-style: italic;
+    text-align: center;
+}
 
 
 /* footer */
