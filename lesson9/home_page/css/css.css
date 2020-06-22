@@ -159,7 +159,7 @@ a {
 }
 
 .homemotto{
-    font-style: italic;
+    font-style: bold;
     text-align: center;
 }
 
@@ -236,7 +236,7 @@ form {
   }
   
   body {
-    font-family: 'Source Sans Pro', 'sans-serif';
+    font-family: 'sans-serif';
   }
   
   .thanks {
@@ -249,9 +249,43 @@ form {
     color: white;
   }
   
-  
-  
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+}
 
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px auto;
+    
+}
+
+.card img{
+    max-width: 45%;
+}
+.card .textDiv h2{
+    text-align: left;
+}
+  
+  .textDiv{
+    text-align: left;
+    max-width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card:nth-child(odd){
+    flex-direction: row-reverse;
+    
+}
+
+.card:nth-child(odd) .textDiv{
+    text-align: left;
+    padding-left: 10px
+    
+}
 /* Medium Screens */
 
 @media only screen and (min-width: 664px) {
@@ -381,6 +415,34 @@ form {
     }
     .logo {
         width: 10%;
+    }
+    .cards{
+        flex-direction: row;
+        margin: 0 auto;
+        
+    }
+
+    .card{
+        flex-direction: column;
+        margin: 15px;
+        
+    }
+
+    .card img{
+        max-width: 100%;
+    }
+    .card:nth-child(odd){
+        
+        flex-direction: column;
+
+    }
+
+    .card:nth-child(odd) .textDiv{
+        text-align: center;
+    }
+
+    .card .textDiv, .card .textDiv h2{
+        text-align: center;
     }
 
 }
