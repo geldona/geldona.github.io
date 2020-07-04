@@ -1,143 +1,121 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site planning for weather application site">
-    <title>Fish Haven Town Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="/lesson10/style.css">
-    <link rel="shortcut icon" href="/lesson6/images/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Weather and local events Preston, Soda Springs and Fish Haven, Idaho">
+  <title>The Weather Today | Soda Springs | Weather Conditions and Forecast</title>
+ 
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="/lesson11/lesson11.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/lesson6/images/favicon.ico">
 </head>
 
-    <header>
-        <div id="banner">
-            <p>Saturday = Fish Haven Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-        </div>
-        <div class="head-bar">
-            <img class="logo" src="/lesson3/images/icon-w3.png" alt="Weater_icon">
-            <div>
-                <h1 class="top-heading">The Weather Today</h1>
-                <div class="motto">Just a click aways</div>
-            </div>
-        </div>
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776; Menu</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="preston-10.html">Preston</a></li>
-                <li><a href="sodasprings.html">Soda Springs</a></li>
-                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Fish Haven</h2>
+<body>
+  <header>
+    <img src="/lesson3/images/icon-w3.png" alt="sun storm cloud" id="logo">
+    <div class="headertext">
+      <h1>The Weather Today</h1>
+      <div id="motto">
+        Just a click away
+      </div>
+    </div>
+  </header>
+  <nav>
 
-            <div class="hero">
-                <picture>
-                    <source srcset="images\franklinLarge.jpg" alt="Hero Image" class="hero-image" media="(min-width: 1200px)">
-                    <source srcset="images\image_small.jpg" alt="Hero Image" class="hero-image" media="(min-width: 660px)">    
-                    <img src="/lesson10/images/franklinLarge.jpg" alt="Hero Image">
-                </picture>
-               
-                 <div id ="weather-summary">
-                    <h4>Weather Summary</h4>
-                    <div id="weather-table">
-                        <div id="weather-stats">
-                            <p>Currently:</p>
-                            <p>High:</p>
-                            <p>Wind Chill:</p>
-                            <p>Humidity:</p>
-                            <p>Wind Speed:</p>
-                        </div>
-                        <div id="weather-values">
-                            <p class="rc"><span id="current"></span></p>
-                            <p class="rc"><span id="temp"></span>&#8457;</p>
-                            <p class="rc"><span id="windchill"></span>&#8457;</p>
-                            <p class="rc"><span id="humidity"></span>%</p>
-                            <p class="rc"><span id="windspeed"></span> mph</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <h2>5 Day Forecast</h2>
-        <div id="forecast-table"> 
-            <div class="forecast-days">
-                <p><span id="day1"></span></p>
-                <div>
-                    <img id="icon1">
-                    <p><span id="tempd1"></span> &#8457;</p>
-                </div>
-                <p><span id="day2"></span></p>
-                <div>
-                    <img id="icon2">
-                    <p><span id="tempd2"></span> &#8457;</p>
-                </div>
-                <p><span id="day3"></span></p>
-                <div>
-                    <img id="icon3">
-                    <p><span id="tempd3"></span> &#8457;</p>
-                </div>
-                <p><span id="day4"></span></p>
-                <div>
-                    <img id="icon4">
-                    <p><span id="tempd4"></span> &#8457;</p>
-                </div>
-                <p><span id="day5"></span></p>
-                <div>
-                    <img id="icon5">
-                    <p><span id="tempd5"></span> &#8457;</p>
-                </div>
-            </div>
+    <ul class="navigation">
+      <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="/lesson10/preston-10.html">Preston</a></li>
+      <li><a href="/lesson11/sodaspring/soda_spring.html">Soda Springs</a></li>
+      <li><a href="/lesson11/fihhaven/fish_haven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2 class="townname">Soda Springs, Idaho</h2>
+    <section class="mainhero">
+      <img srcset="/lesson10/images/image_small.jp 400w,
+      /lesson11/images/soda-springsLarge.jpgg 800w,
+      /lesson10/images/franklinLarge.jpg" sizes="(max-width: 400px) 400px,
+                     (max-width: 800px) 800px,
+                     1200px" src="/lesson10/images/franklinLarge.jpg" alt="Soda Springs lake view" id="hero">
+      <div class="weathersummary">
+        <h3>Weather Summary</h3>
+        <p class="label">Currently: <span class="value" id="tempF"></span></p>
+        <p class="label">High: <span class="value" id="high"></span></p>
+        <p class="label">Wind Chill: <span class="value" id="windchill"></span></p>
+        <p class="label">Wind Speed: <span class="value" id="wind"></span></p>
+        <p class="label">Humidity: <span class="value" id="humid"></span></p>
+      </div>
+    </section>
+    <section class="fiveday">
+      <h2>Five Day Forcast</h2>
+      <table>
+        <tr>
+          <th id="day1"></th>
+          <th id="day2"></th>
+          <th id="day3"></th>
+          <th id="day4"></th>
+          <th id="day5"></th>
+        </tr>
+        <tr>
+          <td><span id="forecast1"></span><br><span><img src="" alt="" class="forecastimg" id="ccimg1"></span></td>
+          <td><span id="forecast2"></span><br><span><img src="" alt="" class="forecastimg" id="ccimg2"></span></td>
+          <td><span id="forecast3"></span><br><span><img src="" alt="" class="forecastimg" id="ccimg3"></span></td>
+          <td><span id="forecast4"></span><br><span><img src="" alt="" class="forecastimg" id="ccimg4"></span></td>
+          <td><span id="forecast5"></span><br><span><img src="" alt="" class="forecastimg" id="ccimg5"></span></td>
+        </tr>
+      </table>
       
-        </div>
-        
-        <div class="content-box" id="article">
-            <div> 
-                <h3>Article</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam excepturi non velit ex
-                     ut magni consequuntur culpa id?
-                     Numquam temporibus iste obcaecati repellat nostrum quis totam quibusdam pariatur atque!
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam excepturi non velit ex
-                     ut magni consequuntur culpa id?
-                     Numquam temporibus iste obcaecati repellat nostrum quis totam quibusdam pariatur atque! </p>
-        </div>
-            <img id="article-img" src="/lesson10/images/preston.jpg" alt="preston-image"> 
-        </div>
+    </section>
+    <section class="calendar">
+      <h2>Upcoming Events</h2>
+      <p id="events"></p>
 
-        <div class='contact'>
-            <img class='map' src='/lesson6/images/map.PNG' alt='Map Image'>
-            <p class='contact-info'><b>Contact Us</b> <br>  <br> tel (123)-456-789 <br>123456@321.com
-        </div>
-           
-              
-       
-         
+    </section>
+    <article>
+      <picture>
+        <img srcset="/lesson10/images/preston.jpg 400w,
+        /lesson10/images/preston.jpg 800w" sizes="(max-width: 400px) 400px,
+                       (max-width: 800px) 800px" src="/lesson10/images/preston.jpg" alt="sunny" id="class">
+      </picture>
+      <h2>The weather during the holidays</h2>
+      <pre>by James Gordon</pre>
+      <p>Lorem ipsum, 
+          dolor sit amet consectetur adipisicing elit. Ducimus nam dolore dolor reiciendis ration
+          e temporibus error provident quo illum quasi! Quam doloremque nobis, fugiat rem id sapiente totam doloribus!
+           Libero.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tenetur ratione nostrum non eius possimus, magni similique.
+         Minus expedita excepturi ipsum harum magnam ratione? Accusantium nostrum illo facilis aliquam porro.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus est laborum repudiandae cumque dolores cupiditate animi,
+         inventore reiciendis odio quidem cum pariatur nobis nostrum a officia alias nisi facilis!</p>
+    </article>
+    <section class="contact">
+      <div class="contactinfo">
+        <h3>Contact information</h3>
+        <p>Phone: 123.256321</p>
+        <p>Email: info@idahow.com</p>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.91298976623!2d-111.62379169219079!3d42.661470635402175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553207477917"
+          width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
 
-        
-    
-      
-    </main>
-    
-    <footer>
-      
-        <p>&copy; 2020 | <a href="XXXXXX">GL</a> | Weather Site | <a href="http://www.byui.edu/online" >BYU-I Online Learning</a> </p>
-        <p><span id='formatDate' class='footer-p'></span></p>
-    </footer>
-    <script src="js/date.js"></script>
-    <script src="js/toggleMenu.js"></script>
-    <script src="js/WindChill.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/webFont.js"></script>
-    <script src="js/json.js"></script>
-    <script src="js/loopingDays.js"></script>
-   
+  </main>
+  <footer>
+    <p class="footer">&copy; GL |Brigham Young University - Idaho | 
+      by <a href="http://OpenWeatherMap.org">OpenWeatherMap.org</a><br>
+      <span id="currentdate"></span>
+    </p>
+  </footer>
+  <script src="/lesson10/js/json.js"></script>
+ 
 </body>
 
 </html>
