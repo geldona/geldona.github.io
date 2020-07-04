@@ -280,9 +280,11 @@ p, li, a, b {
 }
 
 #article img{
-  max-width: 20%;
-  max-height: 25%;
-  margin: 0 auto;
+
+    height: 250px;
+        margin-left: 15px;
+        margin-top: 18px;
+        float: right;
 }
 
 footer {
@@ -405,6 +407,11 @@ label, textarea, input, div, select{
 }
 
 @media only screen and (min-width: 660px) {
+
+  #article img{
+
+    
+  }
   nav button {
       display: none;
   }
@@ -467,10 +474,10 @@ label, textarea, input, div, select{
   }
 
   #article img{
-      max-width: 20%;
-      display: flex;
-      margin: 0 auto;
-      padding-left: 9px;
+    height: 250px;
+    margin-left: 15px;
+    margin-top: 18px;
+    float: right;
   }
 
   .map {
