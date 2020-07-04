@@ -3,446 +3,381 @@
 
 
 
-
-.head-bar {
-    background-color: skyblue;
-}
-
-nav button {
-    margin: .3rem 2.2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.4rem;
-    color: black;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-nav {
-    background-color: white;
-    font-family: 'Cinzel', sans-serif;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    display: block;
-    padding: .9rem 2.5%;
-    text-decoration: none;
-    color: black;
-    border-top: 1px solid white;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: black;
-}
-
-.head-bar {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.head-bar div {
-    text-align: center;
-}
-
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.hide {
-    display: none;
-}
-
-.motto{
-    color: black;
-    font-size: 0.8em;
-}
-
-/* main */
-
 body {
-    font-family: sans-serif;
-}
-
-main {
-      display: flex;
-    flex-direction: row;
-    padding: 10px;
+    font-family:  sans-serif;
+    font-size: 15px;
+    color: black;
   }
-header {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Cinzel", serif;
-    color: black;
-}
-
-
-.top-heading {
-    margin-bottom: 0;
-    color: black;
-    font-size: 1.6em;
-}
-
-
-
-h2 {
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Cinzel;
+  }
+  
+  nav {
+    list-style-type: none;
+    background: black;
+  }
+  
+  nav a {
+    display: flex;
+    text-decoration: none;
     text-align: center;
-    font-size: 1em;
+    color: white;
+    padding: 9px
+  }
+  
+  nav a:visited {
+    color: white;
+  }
+  
+  nav a:hover {
+    color: #3d3838;
+    background: white;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    list-style-type: none;
     margin-top: 0;
-    margin-left: 0;
-    padding-top: 25px;
-    background-color: rgb(243, 231, 231);
-}
-
-h3 {
-    font-size: 1.4em;
-}
-
-h4 {
-    margin-bottom: 5px;
-   
-    font-size: 20px;
-}
-
-p,
-li,
-a {
-    font-family: "Cinzel", sans-serif;
-    color: black;
-}
-
-.cards{
+    padding-left: 0
+  }
+  
+  .navigation li:first-child,
+  nav ul {
+    display: flex
+  }
+  
+  .navigation li {
+    display: none
+  }
+  
+  .responsive li {
+    display: flex
+  }
+  
+  nav ul:first-child {
+    background: #3d3838;
+    margin: .25rem 2%;
+    border: none;
+    font-size: 1.1rem;
+    color: rgb(238, 236, 250);
+    justify-content: center
+  }
+  
+  main {
+    max-width: 950px;
+    margin: 0 auto
+  }
+  
+  header,
+  main {
+    align-content: center
+  }
+  
+  header {
+    background:rgb(238, 236, 250);
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    flex-direction: column;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: grey;
-    width: 75%;
-}
-
-.card img{
-    object-fit: cover;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-.homemotto{
-   
-    text-align: center;
-}
-
-
-/* footer */
-.footer-top {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: cornflowerblue;
-    border-top: 2px solid black;
-}
-
-
-.footer-info {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.strong {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-
-
-.footer-bar {
-    background-color: black;
-    padding: 30px;
-}
-
-.footer-bar a {
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+  }
+  
+  #motto {
+    font-family: Cinzel;
+  }
+  
+  .active {
+    background-color: rgba(190, 188, 188, .2);
+    color: #f0f0f0
+  }
+  
+  #hero {
+    width: 100%;
     display: block;
-
-}
-
-.footer-bar p,
-.footer-bar a,
-.footer-bar div {
-    color: white;
-    margin: 0;
-}
-
-#date {
-    text-align: center;
-    padding: 10px;
-    font-size: 1.2em;
-}
-form {
-    max-width: 500px;
-  margin: 0 auto;
+    margin: auto
   }
   
-  label {
-    display: inline-block;
-    min-width: 120px;
+  .mainhero {
+    position: relative
   }
   
-  form div {
-  margin-top: 2px;
-  padding: 5px;
-  }
-  
-  .flex {
+  footer {
+    background:white;
+    max-width: 950px;
+    align-content: center;
+    margin: auto;
     display: flex;
-  }
-  
-  .nomargin {
-    margin: 0;
-  }
-  
-  .align-top {
-    vertical-align: top;
-  }
-  
-  body {
-    font-family: 'sans-serif';
-  }
-  
-  .thanks {
-    font-size: 50px;
-    text-align: center;
-  }
-  
-  .resetbutton {
-    background-color: black;
-    color: white;
-  }
-  
-  .cards{
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 15px auto;
     
-}
-
-.card img{
-    max-width: 45%;
-}
-.card .textDiv h2{
-    text-align: left;
-}
+  }
   
-  .textDiv{
-    text-align: left;
-    max-width: 80%;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.card:nth-child(odd){
-    flex-direction: row-reverse;
-    
-}
-
-.card:nth-child(odd) .textDiv{
-    text-align: left;
-    padding-left: 10px
-    
-}
-/* Medium Screens */
-
-@media only screen and (min-width: 664px) {
-    nav button {
-        display: none;
-    }
-    .logo {
-        width: 10%;
-    }
-
-    .hide {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #primaryNav li a,
-    #primaryNav li {
-        display: block;
-        width: 100%;
-        white-space: nowrap;
-    }
-
-    #primaryNav a {
-        padding: 20px 10px;
-    }
-
-    .head-bar {
-        justify-content: center;
-
-    }
-
-   
-
-
-    .footer-info p,
-    .footer-info a {
-        font-size: 1em;
-    }
-
-    #date {
-        margin-top: 10px;
-        font-size: 1em;
-    }
-
-   
-    .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .footer-bar {
-        padding: 20px;
-    }
-
-
-
-
-   
-
-   
-
-    main {
-        max-width: 100%;
-        padding: 22px;
-        margin: 0 auto;
-    }
-
+  .weathersummary,
+  footer {
+    padding: 17px;
+    text-align: center
+  }
   
-}
-
-
-
-/* Large Screens */
-@media only screen and (min-width: 1100px) {
-    #primaryNav a {
-        padding: 9px 4px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-
-    .top-heading {
-        font-size: 2.6em;
-    }
-
-    .motto {
-        font-size: 1.1em;
-    }
-
-    .logo {
-        width: 10px;
-    }
-
-
+  .weathersummary {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    background: #3d3838;
+    color: #f0f0f0;
+    opacity: .8
+  }
   
- 
-   
-       
-        footer {
-        max-width: 100%;
-        margin: 0 auto;
+  .label {
+    text-align: left
+  }
+  
+  .townname {
+    text-align: center
+  }
+  
+  .fiveday {
+    align-content: center;
+    display: none
+  }
+  
+  .fiveday h2 {
+    text-align: center
+  }
+  
+  .fiveday table td {
+    background: white;
+  }
+  
+  .fiveday table th {
+    background: #ebf0fa;
+  }
+  
+  .fiveday table td,
+  th {
+    padding: 40px;
+  }
+  
+  .forecastimg {
+    max-width: 52px
+  }
+  
+  
+  #class {
+    max-width: 100%
+  }
+  
+  article {
+    background: rgb(238, 236, 250);
+    padding: 11px;
+    overflow: auto
+  }
+  
+  .contact {
+    display: flex;
+    flex-flow: column wrap
+  }
+  
+  .calendar,
+  .contact {
+    background:white;
+    padding: 11px
+  }
+  
+  .calendar ul {
+    margin-left: 21px
+  }
+  
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%
+  }
+  
+  .gallerygrid figure img {
+    width: 100%
+  }
+  
+  form fieldset {
+    margin: 2.1rem 0;
+    border: 2px solid rgb(238, 236, 250);
+    padding: .5rem 2%
+  }
+  
+  form legend {
+    color: #3d3838;
+    margin: 0 1rem;
+    padding: 0 .6rem
+  }
+  
+  form label.top {
+    display: block;
+    padding-top: 0.9rem;
+    font-size: .7rem;
+    color: #3d3838;
+  }
+  
+  form label.sbs,
+  form label.top {
+    justify-content: center
+  }
+  
+  form label.top input,
+  form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    padding: .76rem;
+    width: 100%;
+    max-width: 20.5rem;
+    background-color: rgba(178, 228, 219, .5)
+  }
+  
+  form label.sbs {
+    display: block;
+    padding: .76rem;
+    color: #3d3838;
+    font-size: .85rem
+  }
+  
+  form input.submitBtn {
+    border: none;
+    background-color: rgba(175, 203, 255, .5);
+    color: #3d3838;
+    padding: .74rem 1.52rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    border-radius: 1.01rem
+  }
+  
+  form label.top:required {
+    border-left: 5px solid 
+  }
+  
+  form label.top:required:valid {
+    border-left: 5px solid 
+  }
+  
+  form label.comments {
+    height: 20px;
+    width: 100%;
+    max-width: 20rem
+  }
+  
+  .towns {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10px
+  }
+  
+  .townPic {
+    max-width: 100%
+  }
+  
+  @media only screen and (min-width:32.5em) {
+    .gallerygrid {
+      grid-template-columns: repeat(2, 1fr)
     }
-
-    .footer-top {
-        justify-content: space-evenly;
+  
+    .towns {
+      display: grid;
+      grid-template-areas: "left middle right";
+      grid-column-gap: 11px
     }
-
-    .footer-bar {
-        padding: 15px 22%;
+  
+    #Preston {
+      grid-area: left
     }
-
-    .footer-info {
-        justify-content: center;
+  
+    #SodaSprings {
+      grid-area: middle
     }
-
-    .footer-info p,
-    .footer-info a {
-        padding: .4em;
+  
+    #FishHaven {
+      grid-area: right
     }
-
-    #date {
-        font-size: 1em;
-        
+  
+    .contact {
+      background: #f0f0f0;
+      padding: 11px;
+      display: grid;
+      grid-template-areas: "left right";
+      justify-items: center
     }
-    .logo {
-        width: 10%;
+  
+    .contactinfo {
+      grid-area: left
     }
-    .cards{
-        flex-direction: row;
-        margin: 0 auto;
-        
+  
+    .map {
+      grid-area: right
     }
-
-    .card{
-        flex-direction: column;
-        margin: 15px;
-        
+  }
+  
+  @media only screen and (min-width:60em) {
+    nav ul {
+      flex-direction: row
     }
-
-    .card img{
-        max-width: 100%;
+  
+    nav ul li {
+      display: inline-block;
+      flex: 1 1 auto;
+      justify-content: center;
+      margin: 0 auto
     }
-    .card:nth-child(odd){
-        
-        flex-direction: column;
-
+  
+    nav li a {
+      padding: 14px 16px
     }
-
-    .card:nth-child(odd) .textDiv{
-        text-align: center;
+  
+    .Menu {
+      display: none
     }
-
-    .card .textDiv, .card .textDiv h2{
-        text-align: center;
+  
+    .navigation li {
+      display: inline-flex
     }
-
-}
+  
+    ul {
+      margin-top: 16px
+    }
+  
+    header {
+      margin-bottom: -19px
+    }
+  
+    #class {
+      max-width: 35%;
+      float: right
+    }
+  
+    .fiveday {
+      display: table;
+      margin: 0 auto
+    }
+  
+    table {
+      border-collapse: collapse;
+      border: 1px solid #3d3838;
+    }
+  
+    table,
+    td,
+    th {
+      text-align: center;
+      vertical-align: middle
+    }
+  
+    .gallerygrid {
+      grid-template-columns: repeat(3, 1fr)
+    }
+  
+    .gallerygrid figure:hover {
+      box-shadow: 0 0 22px #3d3838;
+    }
+  }
