@@ -40,18 +40,18 @@ nav ul li a {
   display: block;
   padding: .8rem 2%;
   text-decoration: none;
-  color: var(--white);
-  border-top: 2px solid var(--white);
+  color: black;
+  border-top: white;
 }
 
 nav ul li a:hover {
-  background-color: var(--white);
-  color: var(--blue);
+  background-color:white;
+  color: black;
 }
 
 nav ul li.active a {
-  background-color: var(--white);
-  color: var(--blue);
+  background-color: white;
+  color: black;
 }
 
 .head-bar {
@@ -75,21 +75,22 @@ nav ul li.active a {
 }
 
 main {
-  background-color: var(--white);
+  background-color: white;
   margin: 0;
 }
 
 .hero picture{
   display: block;
   margin: 0 auto;
-  max-width: 100%;  
+    
   text-align: center;
+  max-width: 80%;
 }
 
 .hero{
   position: relative;
-  margin: 0 auto;
-  width: 100%;
+  margin-right: 4em;
+  max-width: 80%;
 }
 
 .hero-img{
@@ -111,6 +112,7 @@ main {
   left: 1rem;
   max-width: 280px;
   padding-left: 5px;
+  max-width: 80%;
 
 }
 
@@ -132,7 +134,7 @@ main {
 #weather-values{
   margin: 0em;
   text-align: left;
-  color: var(--blue);
+  color: red;
   padding-left: 7px;
 }
 
@@ -153,7 +155,7 @@ h4{
 
 .top-heading {
   margin-bottom: 0;
-  color: var(--white);
+  
 }
 
 h2 {
@@ -171,8 +173,7 @@ h2 {
 }
 .motto {
   margin: 5px 10px 10px 10px;
-  color: var(--white);
-  font-family: "Cinzel", serif;
+    font-family: "Cinzel", serif;
 }
 
 #forecast-table p1{
@@ -182,8 +183,8 @@ h2 {
   margin: 0;
   border-collapse: collapse;
   font-family: "Cinzel", serif;
-  color: rgb(26, 25, 25);
-  
+  color: black;
+  max-width: 80%;
 }
 
 #forecast-table p2{
@@ -192,7 +193,7 @@ h2 {
   align-self: center;
   margin: 0;
   border-collapse: collapse;
-  color: var(--blue)
+  max-width: 80%;
   
 }
 
@@ -203,6 +204,7 @@ h2 {
   align-self: center;
   margin: 0 auto;
   font-family: "Cinzel", serif; 
+  max-width: 80%;
 }
 
 .forecast-days {
@@ -219,17 +221,31 @@ h2 {
   padding-top: 5px;
   color: rgb(26, 25, 25);
   text-align: center;
+  max-width: 80%;
 }
 
 .forecast-days div {
-  border: 2px solid var(--blue);
+  
   grid-row: 2/3;
-  background-color: var(--lightblue);
+  background-color: white;
   padding: 10px;
-  margin:  10px;
-  text-align: center;
+   text-align: center;
 }
-
+.contact{
+  max-width: 100%;
+  background-color: white;
+  margin: 1em auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-info{
+  grid-column: 2/3;
+  max-width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
 p, li, a, b {
   font-family: "Cinzelo", sans-serif;
@@ -243,8 +259,9 @@ p, li, a, b {
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 25px;
-  background-color: var(--lightblue);
+  background-color: whitesmoke;
   justify-content: center;
+  max-width: 80%;
   
 }
 
@@ -259,23 +276,24 @@ p, li, a, b {
   display: flex;
   padding: 20px;
   margin: 20px auto;
+  max-width: 80%;
 }
 
 #article img{
-  max-width: 25%;
+  max-width: 20%;
   max-height: 25%;
   margin: 0 auto;
 }
 
 footer {
   padding: 5px;
-  background-color: var(--blue);
+  background-color: black;
   text-align:center;
 }
 
 
 footer p, footer a{
-  color: var(--white);
+  color: white;
 }
 
 .logo {
@@ -306,7 +324,7 @@ figure{
 
 #banner{
   padding: 10px 20px;
-  background-color: var(--lightblue);
+  background-color: whitesmoke;
   text-align: center;
   width: 100%;
   font-size: 18px;
@@ -318,11 +336,11 @@ form{
 }
 
 legend{
-  color: var(--white);
+  
   font-family: "Cinzel", sans-serif;
   font-size: 1.3em;
   padding: 5px 15px 5px 15px;
-  background-color: var(--blue);
+  
   border-radius: 15px;
   display: block;
 }
@@ -355,7 +373,7 @@ label, textarea, input, div, select{
   padding-right:50px;
   border-radius: 15px;
   font-size: 1.3em;
-  background-color: var(--lightblue);
+  background-color: whitesmoke;
   display: block;  
 }
 
@@ -405,6 +423,8 @@ label, textarea, input, div, select{
       padding-left: 5px;
       padding-right: 5px;
       opacity: 0.9;
+      max-width: 80%;
+
   
   }
   #primaryNav li a, #primaryNav li {
@@ -447,11 +467,10 @@ label, textarea, input, div, select{
   }
 
   #article img{
-      max-width: 45%;
-      max-height: 45%;
+      max-width: 20%;
       display: flex;
       margin: 0 auto;
-      padding-left: 10px;
+      padding-left: 9px;
   }
 
   .map {
@@ -525,7 +544,7 @@ label, textarea, input, div, select{
 
   
   #weather-summary {
-      box-shadow: 2px 5px 10px -7px var(--grey), -2px -5px 10px -7px var(--white);
+      
       background-color: rgb(195, 208, 250,0.8);
       opacity: .8;
       position: absolute;
@@ -533,6 +552,7 @@ label, textarea, input, div, select{
       left: 325px;
       max-width: 280px;
       padding-right: 10px;
+      max-width: 80%;
   }
 
   figcaption{
@@ -544,7 +564,7 @@ label, textarea, input, div, select{
   }
 
   h2 {
-      font-size: 2.5em;
+      font-size: 2em;
   }
 
   .top-heading {
@@ -566,7 +586,7 @@ label, textarea, input, div, select{
   }
   
   figure:hover{
-      box-shadow: 7px 4px 24px -6px var(--grey);
+      box-shadow:white;
       cursor: pointer;
       
   }
