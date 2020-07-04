@@ -1,120 +1,150 @@
+
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Weather</title>
-<meta name="description" content="preston weather">
-<link href ="/lesson6/css/style6.css" rel = "stylesheet">
-<link rel="stylesheet" href="/normalize.css">
-<link rel="icon" href="/lesson6/images/favicon.ico" type="image/x-icon">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site planning for weather application site">
+    <title>Windy Weather| Preston Town Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="/lesson10/style.css">
+    <link rel="shortcut icon" href="/lesson6/images/favicon.ico">
 </head>
-<body>
-    <div id="fridays" style="display: block; background-color: yellow; text-align: center; padding:1em;"></div>
-    <script src='/lesson5/js/friday.js'></script>
-    <div class = "content">
-        <header>
-            
-            <img class = "logo1" src = "/lesson3/images/icon-w3.png" alt="weather icon">
-            <div class="container">
-                <div class="banner-text1">
-                <h1>The Weather Today</h1>
-                <p>Just a click away</p>
-            </div>
-        </div>
-        </header>
-        <nav>
-            <ul class = "navigation">
-                <li><a class = "ham" href = "#">&#9776; Menu</a></li>
-                <li><a href="/lesson4/preston-4.html">Home</a></li>
-                <li class='active'><a class='active' href="">Preston</a></li>
-                <li><a href="">Soda Springs</a></li>
-                <li><a href="">Fish Haven</a></li>
-                <li><a href="">Storm Center</a></li>
-                <li><a href="">Gallery</a></li>
-                </ul>
-      </nav>
-        
-       <main class = "area">
-        <h2>Preston Idaho</h2>
-        <div class='hero'>
-            <div class='weather-summary'>
-                <h4>Weather Summary</h4>
-                <div id="weather-table">
-                    <div id="weather-stats">
-                        <p>Currently:</p>
-                        <p>High:</p>
-                        <p>Wind Chill:</p>
-                        <p>Humidity:</p>
-                        <p>Wind Speed:</p>
-                    </div>
-                    <div id="weather-values">
-                        <p>Heavy Winds</p>
-                        <p><span id="temp"></span>&#0176; F</p>
-                        <p id="windChillDiv"><span id="windChill"></span>&#0176; F</p>
-                        <p>54%</p>
-                                             
-                        
-                        <p><span id="windSpeed">6</span> mph</p>
-                    </div>
-                   
-                </div>
 
-            </div>
+    <header>
+        <div id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
         </div>
-        <div class='forecast'>
-            <h3>5 Day Forecast</h3><br>
-            <div id="forecast-table" class="content-box">
-                <p>Wed</p>
-                <p>Thu</p>
-                <p>Fri</p>
-                <p>Sat</p>
-                <p>Sun</p>
-                <img class='sun-img' src='/lesson6/images/sunny.PNG' alt='Article Image'>
-                <img class='rain-img' src='/lesson6/images/rainy.PNG' alt='Article Image'>
-                <img class='sun-img' src='/lesson6/images/sunny.PNG' alt='Article Image'>
-                <img class='cloudy-img' src='/lesson6/images/clouds.PNG' alt='Article Image'>
-                <img class='snow-img' src='/lesson6/images/snow.PNG' alt='Article Image'>
-              
-                <p>80&#0176;</p>
-                <p>74&#0176;</p>
-                <p>82&#0176;</p>
-                <p>76&#0176;</p>
-                <p>60&#0176;</p>
-            
-            </div>
-            
-        </div>
-        <div class='article'>
-            <div class='article-words'>
-                <h3>Article</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum explicabo temporibus eaque laborum neque repudiandae 
-                    hic consequatur ullam ex fugit sequi nisi, quia, 
-                    earum autem vitae atque aliquam unde.</p> 
-            </div>
-            <img class='article-img' src='/lesson6/images/rainy-rain-umbrella-weather.jpg' alt='Article Image'>
-        </div>
-            
-        <div class='contact'>
+        <div class="head-bar">
+            <img class="logo" src="/lesson3/images/icon-w3.png" alt="Weater_icon">
             <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1593499188072!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h1 class="top-heading">The Weather Today</h1>
+                <div class="motto">Just a click aways</div>
+            </div>
         </div>
-            <p class='contact-info'><b>Contact Us</b> <br>  <br> tel (123)-456-789 <br>123456@321.com
-        </div>
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="preston-10.html">Preston</a></li>
+                <li><a href="sodasprings-10.html">Soda Springs</a></li>
+                <li><a href="fishhaven-10.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-10.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Preston</h2>
+
+            <div class="hero">
+                <picture>
+                    <source srcset="images\franklinLarge.jpg" alt="Hero Image" class="hero-image" media="(min-width: 1200px)">
+                    <source srcset="images\image_small.jpg" alt="Hero Image" class="hero-image" media="(min-width: 660px)">    
+                    <img src="/lesson10/images/franklinLarge.jpg" alt="Hero Image">
+                </picture>
+               
+                 <div id ="weather-summary">
+                    <h4>Weather Summary</h4>
+                    <div id="weather-table">
+                        <div id="weather-stats">
+                            <p>Currently:</p>
+                            <p>High:</p>
+                            <p>Wind Chill:</p>
+                            <p>Humidity:</p>
+                            <p>Wind Speed:</p>
+                        </div>
+                        <div id="weather-values">
+                            <p class="rc"><span id="current"></span></p>
+                            <p class="rc"><span id="temp"></span>&#8457;</p>
+                            <p class="rc"><span id="windchill"></span>&#8457;</p>
+                            <p class="rc"><span id="humidity"></span>%</p>
+                            <p class="rc"><span id="windspeed"></span> mph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-                        
-        
-       </main>
+            <h2>5 Day Forecast</h2>
+        <div id="forecast-table"> 
+            <div class="forecast-days">
+                <p><span id="day1"></span></p>
+                <div>
+                    <img id="icon1">
+                    <p><span id="tempd1"></span> &#8457;</p>
+                </div>
+                <p><span id="day2"></span></p>
+                <div>
+                    <img id="icon2">
+                    <p><span id="tempd2"></span> &#8457;</p>
+                </div>
+                <p><span id="day3"></span></p>
+                <div>
+                    <img id="icon3">
+                    <p><span id="tempd3"></span> &#8457;</p>
+                </div>
+                <p><span id="day4"></span></p>
+                <div>
+                    <img id="icon4">
+                    <p><span id="tempd4"></span> &#8457;</p>
+                </div>
+                <p><span id="day5"></span></p>
+                <div>
+                    <img id="icon5">
+                    <p><span id="tempd5"></span> &#8457;</p>
+                </div>
+            </div>
       
-            
-    <footer><p>&copy; GL| Idaho | </p><p class = "currentdate"></p>
-        <script src = "/lesson4/js/code.js"></script>
-        <script src="/lesson6/js/chill.js"></script>
-        <script src="/lesson10/preston.js"></script>
-                </footer>
+        </div>
+        
+        <div class="content-box" id="article">
+            <div> 
+                <h3>Article</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam excepturi non velit ex
+                     ut magni consequuntur culpa id?
+                     Numquam temporibus iste obcaecati repellat nostrum quis totam quibusdam pariatur atque!
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam excepturi non velit ex
+                     ut magni consequuntur culpa id?
+                     Numquam temporibus iste obcaecati repellat nostrum quis totam quibusdam pariatur atque! </p>
+        </div>
+            <img id="article-img" src="/lesson10/images/preston.jpg" alt="preston-image"> 
+        </div>
+
+        <div class="content-box" id="article">      
+            <div>
+                <b>Weather</b>
+                <p>30 N 1st E</p>
+                <p>Preston, Id 83264</p>
+                <p>208-265-1598</p>
+                 
+             </div>
+           <img class="map" src="/lesson6/images/map.PNG" alt="preston-map">
+            </div> 
+              
+
+             
+         
+          
+        
+        
     
-</div>
+      
+    </main>
+    
+    <footer>
+      
+        <p>&copy; 2020 | <a href="XXXXXX">GL</a> | Weather Site | <a href="http://www.byui.edu/online" >BYU-I Online Learning</a> </p>
+        <p><span id='formatDate' class='footer-p'></span></p>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/WindChill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webFont.js"></script>
+    <script src="js/json.js"></script>
+    <script src="js/loopingDays.js"></script>
+   
 </body>
+
 </html>
