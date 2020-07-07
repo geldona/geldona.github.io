@@ -9,58 +9,59 @@
     <title> Gallery For The Weather </title>
     <meta name="description" content="preston weather">
 <link href ="/lesson9/home_page/css/css.css" rel = "stylesheet">
-<link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="/normalize.css>
 <link rel="icon" href="/lesson6/images/favicon.ico" type="image/x-icon">
 
 </head>
 
-<body onload="dateCalc()">
+<body>
     <header>
-        <div class="head-bar">
-            <img class="logo" src="/lesson3/images/icon-w3.png" alt="weather logo">
-            <div>
-                <h1 class="top-heading">The Weather Today</h1>
-                <div class="motto">Just a click aways</div>
-            </div>
+      <img src="/lesson3/images/icon-w3.png" alt="sun storm cloud" id="logo">
+      <div class="headertext">
+        <h1>The Weather Today</h1>
+        <div id="motto">
+            Just a click aways
         </div>
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776; Menu</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="#">Home</a></li>
-                <li><a href="/lesson6/preston-6.html ">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li  class="active"><a href="#">Storm Center</a></li>
-                <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
-            </ul>
-        </nav>
+      </div>
     </header>
-
+    <nav>
+  
+      <button id="menu" onclick="toggleMenu()">&equiv; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="preston-9.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-9.html">Gallery</a></li>
+      </ul>
+    </nav>
     <main>
-        <div class="cards">
-            
-        </div>
+      <section class="towns">
+        <article id="Preston">
+          <img src="/lesson9/home_page/images/preston.jpg" alt="town of Preston" class="townPic">
+        </article>
+        <article id="Soda Springs">
+          <img src="/lesson9/home_page/images/sodasprings.jpg" alt="town of Soda Springs" class="townPic">
+        </article>
+        <article id="Fish Haven">
+          <img src="/lesson9/home_page/images/fishhaven.jpg" alt="town of Fish Haven" class="townPic">
+        </article>
+      </section>
+     
+  
     </main>
-        
-    
-
     <footer>
-        
-        <div class="footer-bar">
-            <div class="footer-info">
-                <p>&copy; Idaho Weather</p>
-              
-                
-                <a href="#">Terms of Use</a>
-                
-            </div>
-            <div id="date"></div>
-        </div>
+      <p class="footer">&copy; GL| Brigham Young University - Idaho<br>
+        <span id="currentdate"></span>
+      </p>
     </footer>
-    
-    <script src="js/menu.js"></script>
-        <script src="js/lazyload.js"></script>
-        <script src="/lesson9/home_page/home.js/home.js"></script>
-</body>
+    <script src="js/currentdate.js"></script>
+    <script src="js/togglemenu.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="/lesson9/home_page/home.js/home.js"></script>
+  </body>
+  
+  </html>
 
-</html>
+    

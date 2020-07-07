@@ -2,447 +2,294 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap') ;
 
 
-
-
-.head-bar {
-    background-color: skyblue;
-}
-
-nav button {
-    margin: .3rem 2.2%;
-    background-color: transparent;
-    border: none;
-    font-size: 1.4rem;
-    color: black;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-nav {
-    background-color: white;
-    font-family: 'Cinzel', sans-serif;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a {
-    display: block;
-    padding: .9rem 2.5%;
-    text-decoration: none;
-    color: black;
-    border-top: 1px solid white;
-}
-
-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-nav ul li.active a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: black;
-}
-
-.head-bar {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.head-bar div {
-    text-align: center;
-}
-
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.hide {
-    display: none;
-}
-
-.motto{
-    color: black;
-    font-size: 0.8em;
-}
-
-/* main */
-
 body {
-    font-family: sans-serif;
-}
-
-main {
-      display: flex;
-    flex-direction: row;
-    padding: 10px;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    color: #302e2e;
   }
-header {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Cinzel", serif;
-    color: black;
-}
-
-
-.top-heading {
-    margin-bottom: 0;
-    color: black;
-    font-size: 1.6em;
-}
-
-
-
-h2 {
-    text-align: center;
-    font-size: 1em;
-    margin-top: 0;
-    margin-left: 0;
-    padding-top: 25px;
-    background-color: rgb(243, 231, 231);
-}
-
-h3 {
-    font-size: 1.4em;
-}
-
-h4 {
-    margin-bottom: 5px;
-   
-    font-size: 20px;
-}
-
-p,
-li,
-a {
-    font-family: "Cinzel", sans-serif;
-    color: black;
-}
-
-.cards{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: grey;
-    width: 75%;
-}
-
-.card img{
-    object-fit: cover;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-.homemotto{
-   
-    text-align: center;
-}
-
-
-/* footer */
-.footer-top {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: cornflowerblue;
-    border-top: 2px solid black;
-}
-
-
-.footer-info {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.strong {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-
-
-.footer-bar {
-    background-color: black;
-    padding: 30px;
-}
-
-.footer-bar a {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Special Elite", monospace;
+  }
+  nav{
+    list-style-type: none;
+    background: #302e2e;
+  }
+  nav a {
     display: block;
-
-}
-
-.footer-bar p,
-.footer-bar a,
-.footer-bar div {
-    color: white;
-    margin: 0;
-}
-
-#date {
+    text-decoration: none;
     text-align: center;
+    color: #afcbff;
     padding: 10px;
-    font-size: 1.2em;
-}
-form {
-    max-width: 500px;
-  margin: 0 auto;
   }
-  
-  label {
-    display: inline-block;
-    min-width: 120px;
-  }
-  
-  form div {
-  margin-top: 2px;
-  padding: 5px;
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  .nomargin {
-    margin: 0;
-  }
-  
-  .align-top {
-    vertical-align: top;
-  }
-  
-  body {
-    font-family: 'sans-serif';
-  }
-  
-  .thanks {
-    font-size: 50px;
-    text-align: center;
-  }
-  
-  .resetbutton {
-    background-color: black;
+  nav a:visited {
     color: white;
   }
-  
-  .cards{
-    flex-direction: column;
-    justify-content: center;
-}
-
-.card{
+  nav a:hover {
+    color: #302e2e;
+    background: white;
+  }
+  nav ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px auto;
-    
-}
-
-.card img{
-    max-width: 45%;
-}
-.card .textDiv h2{
-    text-align: left;
-}
-  
-  .textDiv{
-    text-align: left;
-    max-width: 80%;
-    padding: 20px;
+    flex-direction:column;
+    list-style-type: none;
+  }
+  ul {
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+  nav ul.hide{
+    display: none;
+  }
+  nav button {
+    background: #302e2e;
+    margin: .2rem 2%;
+    border: none;
+    font-size: 1.6rem;
+    color:rgb(238, 236, 250);
+    justify-content: center;
+  }
+  #menu {
+    justify-content: center;
+  }
+  main {
+    max-width: 960px;
     margin: 0 auto;
-}
-
-.card:nth-child(odd){
-    flex-direction: row-reverse;
-    
-}
-
-.card:nth-child(odd) .textDiv{
+    align-content: center;
+  }
+  header {
+    background: rgb(238, 236, 250);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  #motto {
+    font-family: "Special Elite", monospace;
+  }
+  .active {
+    background-color: rgba(190, 188, 188, 0.2);
+    color: #f0f0f0;
+  }
+  #hero {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .mainhero {
+    position: relative;
+  }
+  footer {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    max-width: 960px;
+    align-content: center;
+    margin: auto;
+  }
+  
+  .weathersummary {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    background: #302e2e;
+    color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    opacity: .8;
+  }
+  .label {
     text-align: left;
-    padding-left: 10px
-    
-}
-/* Medium Screens */
+    /*font-size: .8rem;
+    line-height: 80%;*/
+  }
+  .townname {
+    text-align: center;
+  }
+  .fiveday {
+    align-content: center;
+    display: none;
+    padding:10px;
+  }
+  .fiveday h3 {
+    text-align: center;
+  }
+  .forcastimg {
+    max-width: 50px;
+  }
+  #class {
+    max-width: 100%;
+  }
+  article {
+    background: rgb(238, 236, 250);
+    padding: 10px;
+    overflow: auto;
+  }
+  .contact {
+    background: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .gallerygrid figure img {
+    width: 100%;
+  }
+  /*---FORM---*/
+  form fieldset {
+    margin: 2rem 0;
+    border: 1px solid rgb(238, 236, 250);
+    padding: .5rem 2%;
+  }
+  form legend {
+    color: #302e2e;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+  }
+  form label.top {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+    color: #302e2e;
+  }
+  form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #302e2e;
+  }
+  form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(178, 228, 219, .5);
+  }
+  form label.sbs {
+    display: block;
+    padding: .75rem;
+    color: #302e2e;
+    font-size: .8rem;
+  }
+  form input.submitBtn {
+    border: none;
+    background-color: rgba(175, 203, 255, .5);
+    color: #302e2e;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    border-radius: 1rem;
+  }
+  form label.top:required {
+    border-left: 5px solid red;
+  }
+  form label.top:required:valid {
+    border-left: 5px solid green;
+  }
+  form label.comments{
+    height: 20px;
+    width: 100%;
+    max-width: 20rem;
+  }
+  /*-----INDEX-----*/
+  .towns {
+    display: flex;
+    flex-flow: column wrap;
+  }  
+  .townPic {
+    max-width: 100%;
+  }
+  @media only screen and (min-width: 32.5em) {
 
-@media only screen and (min-width: 664px) {
+    .gallerygrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .towns {
+      display: grid;
+      grid-template-areas: "left middle right";
+      grid-column-gap: 10px;
+    }
+    #Preston {
+      grid-area: left;
+    }
+    #SodaSprings {
+      grid-area: middle;
+    }
+    #FishHaven {
+      grid-area: right;
+    }
+    .contact {
+      background: #f0f0f0;
+      padding: 10px;
+      display: grid;
+      grid-template-areas: "left right";
+      justify-items: center;
+    }
+    .contactinfo {
+      grid-area: left;
+    }
+    .map {
+      grid-area: right;
+    }
+    }
+
+@media only screen and (min-width: 60em){
+    nav ul {
+      flex-direction: row;
+    }
+    nav ul li {
+      display: block;
+      flex: 1 1 auto;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    nav li a {
+      padding: 14px 16px;
+    }
+    /*nav li:first-child {
+      display: none;
+    }*/
+    nav ul.hide {
+      display: flex;
+    }
     nav button {
-        display: none;
+      display: none;
     }
-    .logo {
-        width: 10%;
+    ul {
+      margin-top: 15px;
     }
-
-    .hide {
-        display: flex;
-        justify-content: space-between;
+    header {
+      margin-bottom: -18px;
     }
-
-    #primaryNav li a,
-    #primaryNav li {
-        display: block;
-        width: 100%;
-        white-space: nowrap;
+    
+    
+    #class {
+      max-width: 35%;
+      float: right;
     }
-
-    #primaryNav a {
-        padding: 20px 10px;
+    .fiveday {
+      display: table;
+      margin: 0 auto;
     }
-
-    .head-bar {
-        justify-content: center;
-
+    table {
+      border-collapse: collapse;
     }
-
-   
-
-
-    .footer-info p,
-    .footer-info a {
-        font-size: 1em;
+    table, th, td {
+      border: solid #302e2e 2px;
+      text-align: center;
+      vertical-align: middle;
     }
-
-    #date {
-        margin-top: 10px;
-        font-size: 1em;
+    .gallerygrid {
+      grid-template-columns: repeat(3, 1fr);
     }
-
-   
-    .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .gallerygrid figure:hover {
+      box-shadow: 0 0 20px #302e2e;
     }
-
-    .footer-bar {
-        padding: 20px;
-    }
-
-
-
-
-   
-
-   
-
-    main {
-        max-width: 100%;
-        padding: 22px;
-        margin: 0 auto;
-    }
-
-  
-}
-
-
-
-/* Large Screens */
-@media only screen and (min-width: 1100px) {
-    #primaryNav a {
-        padding: 9px 4px;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-
-    .top-heading {
-        font-size: 2.6em;
-    }
-
-    .motto {
-        font-size: 1.1em;
-    }
-
-    .logo {
-        width: 10px;
-    }
-
-
-  
- 
-   
-       
-        footer {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .footer-top {
-        justify-content: space-evenly;
-    }
-
-    .footer-bar {
-        padding: 15px 22%;
-    }
-
-    .footer-info {
-        justify-content: center;
-    }
-
-    .footer-info p,
-    .footer-info a {
-        padding: .4em;
-    }
-
-    #date {
-        font-size: 1em;
-        
-    }
-    .logo {
-        width: 10%;
-    }
-    .cards{
-        flex-direction: row;
-        margin: 0 auto;
-        
-    }
-
-    .card{
-        flex-direction: column;
-        margin: 15px;
-        
-    }
-
-    .card img{
-        max-width: 100%;
-    }
-    .card:nth-child(odd){
-        
-        flex-direction: column;
-
-    }
-
-    .card:nth-child(odd) .textDiv{
-        text-align: center;
-    }
-
-    .card .textDiv, .card .textDiv h2{
-        text-align: center;
-    }
-
-}
+    
