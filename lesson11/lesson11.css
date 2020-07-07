@@ -127,6 +127,10 @@ body {
     justify-content: center;
     
   }
+  .contactinfo {
+    justify-content: center;
+    display: grid;
+  }
   
   .weathersummary,
   footer {
@@ -289,6 +293,11 @@ body {
   .townPic {
     max-width: 100%
   }
+  .map {
+    grid-area: right;
+    display:none;
+    
+  }
   
   @media only screen and (min-width:32.5em) {
     h1 {
@@ -336,11 +345,16 @@ body {
     }
   
     .contactinfo {
-      grid-area: left
-    }
+      grid-area: left;
+      
+        display: block;
+      }
+    
   
     .map {
-      grid-area: right
+      grid-area: right;
+      display:block;
+      
     }
   }
   #logo {
@@ -358,6 +372,12 @@ margin-right: 0.01em;
    
       font-size: 1em;
     }
+    
+    .map {
+      grid-area: right;
+      display:block;
+    }
+
     #motto {
      
       margin-left:6em;
@@ -429,4 +449,5 @@ margin-right: 0.01em;
   margin-top: 0.5em;
   margin-right: 0em;
   }
+  
   }
