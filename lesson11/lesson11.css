@@ -299,7 +299,7 @@ body {
   
   .weathersummary {
    
-    font-size: 1.em;
+    font-size: 1em;
   }
   #motto {
     
@@ -346,7 +346,7 @@ body {
   #logo {
     max-width: 30%;
 margin-top: 0.5em;
-margin-right: 0em;
+margin-right: 0.01em;
 }
   
   @media only screen and (min-width:60em) {
