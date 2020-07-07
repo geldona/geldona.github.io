@@ -17,7 +17,11 @@ body {
   h6 {
     font-family: Cinzel;
   }
-  
+  h1 {
+    font-size: 1em;
+    margin-top: 3em;
+    margin-left: 1em;
+  }
   nav {
     list-style-type: none;
     background: black;
@@ -91,6 +95,12 @@ body {
   
   #motto {
     font-family: Cinzel;
+    margin-left:2em;
+  }
+  #logo {
+        max-width: 30%;
+    margin-top: 0.5em;
+    margin-right: 9em;
   }
   
   .active {
@@ -280,6 +290,15 @@ body {
   }
   
   @media only screen and (min-width:32.5em) {
+    h1 {
+      font-size: 2em;
+      margin-top: 3em;
+    margin-left: 1em;
+  }
+  #motto {
+    
+    margin-left:6em;
+  }
     .gallerygrid {
       grid-template-columns: repeat(2, 1fr)
     }
@@ -318,11 +337,25 @@ body {
       grid-area: right
     }
   }
+  #logo {
+    max-width: 30%;
+margin-top: 0.5em;
+margin-right: 0em;
+}
   
   @media only screen and (min-width:60em) {
     nav ul {
       flex-direction: row
     }
+    #motto {
+     
+      margin-left:6em;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 3em;
+    margin-left: 1em;
+  }
   
     nav ul li {
       display: inline-block;
@@ -380,4 +413,9 @@ body {
     .gallerygrid figure:hover {
       box-shadow: 0 0 22px #3d3838;
     }
+    #logo {
+      max-width: 40%;
+  margin-top: 0.5em;
+  margin-right: 0em;
+  }
   }
