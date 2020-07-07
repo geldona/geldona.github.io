@@ -140,7 +140,8 @@ body {
     left: 11px;
     background: #3d3838;
     color: #f0f0f0;
-    opacity: .8
+    opacity: .8;
+    font-size: 0.7em;
   }
   
   .label {
@@ -295,6 +296,11 @@ body {
       margin-top: 3em;
     margin-left: 1em;
   }
+  
+  .weathersummary {
+   
+    font-size: 1.em;
+  }
   #motto {
     
     margin-left:6em;
@@ -346,6 +352,10 @@ margin-right: 0em;
   @media only screen and (min-width:60em) {
     nav ul {
       flex-direction: row
+    }
+    .weathersummary {
+   
+      font-size: 1em;
     }
     #motto {
      
