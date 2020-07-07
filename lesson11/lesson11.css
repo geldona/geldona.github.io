@@ -240,7 +240,7 @@ body {
   
   form label.top input,
   form label.top select {
-    -webkit-appearance: none;
+    
     display: block;
     padding: .76rem;
     width: 100%;
