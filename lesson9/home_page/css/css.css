@@ -184,7 +184,7 @@ main {
     color: #302e2e;
   }
   form label.top input, form label.top select {
-    -webkit-appearance: none;
+    
     display: block;
     padding: .75rem;
     width: 100%;
