@@ -3,12 +3,12 @@
 
 
 body {
-    font-family: "Lato", Arial, sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     color: #302e2e;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Special Elite", monospace;
+    font-family: Cinzel;
   }
   nav{
     list-style-type: none;
@@ -63,7 +63,7 @@ body {
     padding-bottom: 10px;
   }
   #motto {
-    font-family: "Special Elite", monospace;
+    font-family: Cinzel;
   }
   .active {
     background-color: white);
