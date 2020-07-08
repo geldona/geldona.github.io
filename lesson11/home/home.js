@@ -1,54 +1,53 @@
-let requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-let request = new XMLHttpRequest();
-request.open("GET", requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function () {
-  let towndata = request.response;
-  showData(towndata);
-}
-  function showData(jsonObj) {
-    let town = jsonObj["towns"];
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
+fetch(requestURL)
+.then(function (response) {
+    return response.json();
+})
+.then(function (jsonObject) {
     
-    for (var i = 0; i < town.length; i++) {
-      if (town[i].name == "Preston" || town[i].name == "Soda Springs" || town[i].name == "Fish Haven"){
-      let article = document.getElementById(town[i].name);
-      let myH2 = document.createElement("h2");
-      let para1 = document.createElement("p");
-      let para2 = document.createElement("p");
-      let para3 = document.createElement("p");
-      let para4 = document.createElement("p");
+    const source = jsonObject["towns"];
+    let towns = []
 
-      myH2.textContent = town[i].name;
-      para1.textContent = "Motto: " + town[i].motto;
-      para2.textContent = "Year Founded: " + town[i].yearFounded;
-      para3.textContent = "Population: " + town[i].currentPopulation;
-      para4.textContent = "Annual Rain Fall: " + town[i].averageRainfall + " inches";
+    j=0
+    for (let i = 0; i < source.length; i++ ) {
+        if (source[i].name == "Preston" || source[i].name == "Fish Haven" || source[i].name == "Soda Springs"){
+            towns[j] = source[i]
+            j++
+            
+    }}
+    
+    for (let i = 0; i < towns.length; i++ ) {
+        let card = document.createElement('section');
+        let div = document.createElement('div')
+        let h2 = document.createElement('h2');
+        let motto = document.createElement('p');
+        let yearFounded = document.createElement('p');
+        let population = document.createElement('p');
+        let arf = document.createElement('p');
+        let photo = document.createElement('img');
+        
+        div.classList.add('textDiv')
+        h2.textContent = towns[i].name;
+        motto.textContent = towns[i].motto;
+        motto.classList.add('homemotto')
+        yearFounded.textContent = `Year founded: ${towns[i].yearFounded}`;
+        population.textContent = `Population: ${towns[i].currentPopulation}`;
+        arf.textContent = `Annual Rain Fall: ${towns[i].averageRainfall} in.`;
+        photo.setAttribute('src', 'images/' + towns[i].photo);
+        photo.setAttribute('alt', towns[i].name);
 
-      article.appendChild(myH2);
-      article.appendChild(para1);
-      article.appendChild(para2);
-      article.appendChild(para3);
-      article.appendChild(para4);
+        div.appendChild(h2)
+        div.appendChild(motto)
+        div.appendChild(yearFounded)
+        div.appendChild(population)
+        div.appendChild(arf)
+        card.appendChild(div)
+        card.appendChild(photo)
+        card.classList.add('card')
 
-      
-      }
-    }
-  }
+        document.querySelector('div.cards').appendChild(card);
+    
+    
+    }})
 
-  function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-  }
-
-var now = new Date();
-var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
-var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-function fourdigits(number) {
-    return (number < 1000) ? number + 1900 : number;
-}
-today =  days[now.getDay()] + ", " +
-         date + " " +
-         months[now.getMonth()] + " " +
-         (fourdigits(now.getYear())) ;
-document.getElementById("currentdate").innerHTML = today;
+    // other

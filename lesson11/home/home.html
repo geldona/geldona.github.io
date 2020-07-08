@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  The Weather </title>
     <meta name="description" content="preston weather">
-<link href ="/lesson9/home_page/css/css.css" rel = "stylesheet">
+<link href ="/lesson11/home/css/css.css" rel = "stylesheet">
 <link rel="stylesheet" href="/normalize.css">
 <link rel="icon" href="/lesson6/images/favicon.ico" type="image/x-icon">
 
@@ -26,8 +26,10 @@
     </header>
     <nav>
   
-      <button id="menu" onclick="toggleMenu()">&equiv; Menu</button>
-      <ul id="primaryNav" class="hide">
+      
+    <ul class="navigation">
+      <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+      
         <li><a class="active" href="#">Home</a></li>
         <li><a href="preston-9.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
@@ -46,14 +48,16 @@
   
     
     <footer>
-      <p class="footer">&copy; GL| Brigham Young University - Idaho<br>
+      
+        <p class="footer">&copy; GL |Brigham Young University - Idaho | <br>
         <span id="currentdate"></span>
       </p>
     </footer>
-    <script src="js/currentdate.js"></script>
-    <script src="js/togglemenu.js"></script>
-    <script src="js/windchill.js"></script>
-    <script src="/lesson9/home_page/home.js/home.js"></script>
+    
+    <script src="/lesson10/js/json.js"></script>    
+    <script src="/lesson11/home/home.js"></script>
+    <script src="/lesson9/home_page/home.js/menu.js"></script> 
+    
   </body>
   
   </html>
