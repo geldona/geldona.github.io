@@ -17,13 +17,26 @@ body {
   h6 {
     font-family: Cinzel;
   }
+  h1 {
+    font-size: 1em;
+    margin-top: 3em;
+    margin-left: 1em;
+  }
+  h4{
+    font-size: 1em;
+  }
   h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-top: 0;
     padding-top: 20px;
+    display: none;
 }
-  
+#logo {
+  max-width: 30%;
+margin-top: 0.5em;
+margin-right: 0.01em;
+}
   nav {
     list-style-type: none;
     background: black;
@@ -95,9 +108,14 @@ body {
     padding-bottom: 9px;
   }
   
+  
+     
   #motto {
     font-family: Cinzel;
+    margin-left:2em;
   }
+  
+  
   
   .active {
     background-color: rgba(190, 188, 188, .2);
@@ -381,10 +399,11 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
     border: 1px solid #3d3838;
     background-color: rgb(238, 236, 250);
     border-collapse: collapse;
+    display: none
  
     
 }
@@ -406,6 +425,23 @@ h4{
 }
   
   @media only screen and (min-width:32.5em) {
+    h1 {
+      font-size: 2em;
+      margin-top: 3em;
+    margin-left: 1em;
+  }
+  h4{
+    font-size: 1.5em;
+  }
+    #motto {
+      
+      margin-left:6em;
+    }
+    #logo {
+      max-width: 30%;
+  margin-top: 0.5em;
+  margin-right: 0.01em;
+  }
     #weather-summary {
 
       
@@ -449,9 +485,28 @@ h4{
     .map {
       grid-area: right
     }
+    h2{
+      display: grid;
+    }
+    .forecast-days {
+      display: grid;}
   }
   
   @media only screen and (min-width:60em) {
+    #motto {
+      
+      margin-left:6em;
+    }
+    #logo {
+      max-width: 40%;
+  margin-top: 0.5em;
+  margin-right: 0em;
+  }
+  h1 {
+    font-size: 2em;
+    margin-top: 3em;
+  margin-left: 1em;
+}
 
     #weather-summary {
       
@@ -495,7 +550,8 @@ h4{
   
     .fiveday {
       display: table;
-      margin: 0 auto
+      margin: 0 auto;
+      display: none;
     }
   
     table {
@@ -517,4 +573,13 @@ h4{
     .gallerygrid figure:hover {
       box-shadow: 0 0 22px #3d3838;
     }
+    h2{
+      display: grid;
+    }
+    .forecast-days {
+      display: grid;}
+      h4{
+        font-size: 1.7em;
+      }
+
   }
