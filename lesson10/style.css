@@ -140,21 +140,20 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: var(--grey);
+    border-top: #ebf0fa;
     
 }
 
 #weather-stats{
     text-align: right;
-    color: var(--grey);
+    
 }
 
 
 #weather-values{
     margin: 0em;
     text-align: left;
-    color: var(--blue);
-    padding-left: 7px;
+        padding-left: 7px;
 }
 
 h4{
@@ -228,8 +227,40 @@ h4{
   }
   
   .calendar ul {
-    margin-left: 21px
+    margin-left: 19px
   }
+  #events{
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(240, 191, 191);
+   
+    
+
+}
+
+#events h3{
+    padding-top: 5px;
+    
+}
+#event-content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#event-content div{
+    padding: 0 22px 12px;
+}
+
+#event-dates{
+    text-align: right;
+    
+}
+
+#event-titles{
+    text-align: left;
+    
+}
   
   .gallerygrid {
     display: grid;
@@ -317,23 +348,23 @@ h4{
     max-width: 100%
   }
   #forecast-table p1{
-    font-family: "Roboto", serif;    
+    font-family: serif;    
     justify-self: center;
     align-self: center;
     margin: 0;
     border-collapse: collapse;
-    font-family: "Roboto", serif;
-    color: var(--grey)
+    font-family: serif;
+    
     
 }
 
 #forecast-table p2{
-    font-family: "Roboto", serif;    
+    font-family: serif;    
     justify-self: center;
     align-self: center;
     margin: 0;
     border-collapse: collapse;
-    color: var(--blue)
+    color: black;
     
 }
 
@@ -343,7 +374,7 @@ h4{
     padding: 10px;
     align-self: center;
     margin: 0 auto;
-    font-family: "Roboto", serif; 
+    font-family: serif; 
 }
 
 .forecast-days {
@@ -351,21 +382,24 @@ h4{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     max-width: 100%;
+    border: 1px solid #3d3838;
+    background-color: rgb(238, 236, 250);
+    border-collapse: collapse;
  
     
 }
 .forecast-days p {
-    font-family: "Roboto", serif; 
+    font-family:  serif; 
     margin: 0;
     padding-top: 5px;
-    color: var(--grey);
+    color: black;
     text-align: center;
 }
 
 .forecast-days div {
-    border: 2px solid var(--blue);
+    
     grid-row: 2/3;
-    background-color: var(--lightblue);
+    background-color: #ebf0fa;
     padding: 10px;
     margin:  10px;
     text-align: center;
@@ -375,7 +409,7 @@ h4{
     #weather-summary {
 
       
-      font-size: 1.2em
+      font-size: 1em
       ;}
 
     .gallerygrid {
@@ -421,7 +455,7 @@ h4{
 
     #weather-summary {
       
-      font-size: 1.4em;
+      font-size: 1.1em;
   }
     nav ul {
       flex-direction: row
