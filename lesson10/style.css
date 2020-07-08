@@ -126,12 +126,13 @@ margin-right: 0.01em;
   
   
   footer {
-    background:white;
+    background:black;
     max-width: 950px;
     align-content: center;
     margin: auto;
     display: flex;
     justify-content: center;
+    color:white;
     
   }
   
