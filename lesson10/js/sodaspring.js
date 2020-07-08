@@ -1,80 +1,135 @@
-let weatherRequest = new XMLHttpRequest();
-let apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=810cde3d5910ebc0f4140c902d4ec7ff";
-weatherRequest.open("GET", apiURLstring, true);
-weatherRequest.responseType = "text";
-weatherRequest.send();
-weatherRequest.onload = function() {
-  let weatherData = JSON.parse(weatherRequest.responseText);
-  //for testing
-  //console.log(weatherData);
-  document.getElementById("tempF").innerHTML = weatherData.main.temp + "&deg; F";
-  document.getElementById("high").innerHTML = weatherData.main.temp_max + "&deg; F";
-  document.getElementById("wind").innerHTML = weatherData.wind.speed + "mph";
-  document.getElementById("humid").innerHTML = weatherData.main.humidity + "%";
+function calculateWindchill(temp, speed) {
 
-  //let tempF = parseFloat(document.getElementById("tempF").innerHTML);
-  //let speed = parseFloat(document.getElementById("wind").innerHTML);
-  let factor = ((35.74 + 0.6215 * weatherData.main.temp) - (35.75 * Math.pow(weatherData.wind.speed,0.16)) + (0.4275 * weatherData.main.temp * Math.pow(weatherData.wind.speed,0.16))).toFixed(2);  
-  document.getElementById("windchill").innerHTML = factor + "&deg; F";
-}
 
-let forecastRequest = new XMLHttpRequest();
-let URLrequest = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=be03b0c014037eb9f061306615b7eb28";
-forecastRequest.open("GET", URLrequest, true);
-forecastRequest.responseType = "text";
-forecastRequest.send();
-forecastRequest.onload = function () {
-  let forecast = JSON.parse(forecastRequest.responseText);
-  let highTemp = [];
-  let day = 1;
-  let weekday = [];
-  var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-
-  for (let i = 0; i < forecast.list.length && day < 6; i++) {
-    if (forecast.list[i].dt_txt.includes("18:00:00")) {
-      highTemp[i] = forecast.list[i].main.temp;
-      let icon = "https://openweathermap.org/img/w/" + forecast.list[i].weather[0].icon + ".png";
-      let desc = forecast.list[i].weather[0].description;
-      let now = new Date(forecast.list[i].dt_txt);
-      weekday = days[now.getDay()];
-      document.getElementById("day" + day).innerHTML = weekday;
-      document.getElementById("forecast" + day).innerHTML = highTemp[i] + "&deg; F";
-      document.getElementById("ccimg" + day).setAttribute("src", icon);
-      document.getElementById("ccimg" + day).setAttribute("alt", desc);
-      day++;
-    }
+    
+  if(temp <= 50 && speed > 3){
+  let windChill = 35.74 + 0.6215 * temp -35.75 * Math.pow(speed, 0.16) + 0.4275 *temp * Math.pow(speed, .16);
+  windChill = Math.round(windChill)
+  document.getElementById('windChill').innerHTML = windChill
   }
-}
+  else{
+      document.getElementById('windChillDiv').innerHTML = 'N/A'
+      
+  }
+  }
 
-let requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-let request = new XMLHttpRequest();
-request.open("GET", requestURL);
-request.responseType = 'json';
-request.send();
-request.onload = function () {
-  let towndata = request.response;
-  showData(towndata);
-}
-function showData(jsonObj) {
-  let town = jsonObj["towns"];
 
-  for (let i = 0; i < town.length; i++) {
-    if (town[i].name == "Soda Springs") {
-      let article = document.getElementById("events");
-      let para1 = document.createElement("ul");
+//fetch weather data
+function getWeather() {
+  const appid = '0b209e7419e85240602a2b16775256c6';
+  const prestonId = '5604473'
+  let url = `https://api.openweathermap.org/data/2.5/weather?id=${prestonId}&appid=${appid}`
+  
+  fetch(url)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      console.log(jsObject);
+      let currently = jsObject.weather[0].main
+      let temp = Math.round(parseFloat(jsObject.main.temp_max) * (9/5) - 459.67)
+      let windchill = ""
+      let humidity = jsObject.main.humidity
+      let wind = jsObject.wind.speed
 
-      for (let a = 0; a < town[i].events.length; a++) {
-        let listItem = document.createElement("li");
-        listItem.textContent = town[i].events[a];
-        para1.appendChild(listItem);
+      //put desired values into an array
+      let weatherValues = [currently, temp, windchill, humidity, wind]
+      for (let i = 0; i < weatherValues.length; i++){
+          let p = document.createElement('p')
+          p.textContent = weatherValues[i]
+      //create elements
+          if (i == 1){
+              let span = document.createElement('span')
+              span.textContent = "° F"
+              
+              p.appendChild(span)
+          }
+          else if (i == 2){
+             let span =  document.createElement('span')
+             span.id = "windChill"
+             p.id = "windChillDiv"
+             p.appendChild(span)
+             p.innerHTML += "° F"
+          }
+          else if (i == 3){
+              p.textContent = weatherValues[i] + "%"
+          }
+          else if (i == 4){
+              let span = document.createElement('span')
+              span.id = "windSpeed"
+              span.textContent = " mph"
+              p.textContent = weatherValues[i]
+              p.appendChild(span)
+          }
+          document.getElementById('weather-values').appendChild(p)
       }
+      calculateWindchill(temp, wind)
 
-      article.appendChild(para1);
+      //fetch data for 5 day forecast
+      let forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=0b209e7419e85240602a2b16775256c6`
+      fetch(forecastURL)
+          .then((response) => response.json())
+          .then((jsObject) =>{
+           //put desired items into arrays                   
+              let dates = [] 
+              let icons = []
+              let temps = []
+              let src = []
+              for (let i = 0; i < jsObject.list.length; i++){
+                  currentObject = jsObject.list[i]
+                  if (currentObject.dt_txt.includes("18:00:00")){ //we only want the data from 6:00PM
 
-    }
-  }
+                      iconNumber = currentObject.weather[0].icon
+                      icons.push(`https://openweathermap.org/img/wn/${iconNumber}@2x.png`) // the code for weather icon
+                      console.log(currentObject.main.temp)
+                      temps.push((Math.round(parseFloat((currentObject.main.temp) -273.15) * (9/5) + 32)) + "° F") //a temperature
+                      src.push(currentObject.weather[0].main)
+                      let day = currentObject.dt_txt.split(" ")
+                      day = day[0].split("-")
+                      const date = new Date()
+                      date.setFullYear(day[0])
+                      date.setMonth(day[1] - 1)
+                      date.setDate(day[2])
+                      let dayOfWeek = date.getDay()
+                      
+                      let weekday = new Array(7);
+                      weekday[1]="Monday";
+                      weekday[2]="Tuesday";
+                      weekday[3]="Wednesday";
+                      weekday[4]="Thursday";
+                      weekday[5]="Friday";
+                      weekday[6]="Saturday";
+                      weekday[0]="Sunday";
+
+                      dates.push(weekday[dayOfWeek])
+                      
+              }
+                      
+              }
+              for (let i = 0; i < dates.length; i++){
+                 p = document.createElement('p')
+                 p.innerHTML = dates[i]
+                 document.getElementById('forecast-table').appendChild(p)
+
+              }
+              for (let i = 0; i < icons.length; i++){
+                  img = document.createElement('img')
+                  img.setAttribute('src', icons[i])
+                  img.setAttribute('alt', src[i])
+                  document.getElementById('forecast-table').appendChild(img)
+              }
+              for (let i = 0; i < temps.length; i++){
+                  p = document.createElement('p')
+                  p.innerHTML = temps[i]
+                  document.getElementById('forecast-table').appendChild(p)
+              }
+          })
+    });
 }
 
+
+
+
+
+getWeather()
 var now = new Date();
 var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
 var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
