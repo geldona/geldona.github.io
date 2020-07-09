@@ -87,14 +87,6 @@ body {
   .mainhero {
     position: relative;
   }
-  footer {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    max-width: 960px;
-    align-content: center;
-    margin: auto;
-  }
   
 /* Home Page Body */
 
@@ -236,11 +228,66 @@ main {
   .townPic {
     max-width: 100%;
   }
+  /* footer */
+.footer-top {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: cornflowerblue;
+  border-top: 2px solid black;
+}
+
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+.footer-bar {
+  background-color: black;
+  padding: 30px;
+}
+
+.footer-bar a {
+  display: block;
+
+}
+
+.footer-bar p,
+.footer-bar a,
+.footer-bar div {
+  color: white;
+  margin: 0;
+}
+
   @media only screen and (min-width: 32.5em) {
     /* Home Page */
     .cards{
       flex-direction: column;
       justify-content: center;
+  }
+  footer {
+    background:black;
+    max-width: 950px;
+    align-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color:white;
+    
+  }
+  
+  
+  footer {
+    padding: 17px;
+    text-align: center
   }
   
   .card{
@@ -293,6 +340,27 @@ main {
     }
     .map {
       grid-area: right;
+    }
+    
+    .footer-info p,
+    .footer-info a {
+        font-size: 1em;
+    }
+
+    #date {
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+   
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-bar {
+        padding: 20px;
     }
     }
 
@@ -389,4 +457,20 @@ main {
     .gallerygrid figure:hover {
       box-shadow: 0 0 20px #302e2e;
     }
+    .footer-top {
+      justify-content: space-evenly;
+  }
+
+  .footer-bar {
+      padding: 15px 22%;
+  }
+
+  .footer-info {
+      justify-content: center;
+  }
+
+  .footer-info p,
+  .footer-info a {
+      padding: .4em;
+  }
   }
