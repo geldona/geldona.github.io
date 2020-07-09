@@ -63,7 +63,55 @@ body {
   .responsive li {
     display: flex
   }
+  /* Home Page Body */
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: rgb(238, 236, 250);
+  border-radius: 10px;
+  text-align: center;
   
+  width:80%;
+}
+
+.card img{
+  object-fit: cover;
+  margin: 17px;
+  border-radius: 12px;
+}
+
+
+main {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+}
+
+
+  
+  .label {
+    text-align: left;
+    /*font-size: .8rem;
+    line-height: 80%;*/
+  }
+  .townname {
+    text-align: center;
+  }
+  .towns {
+    display: flex;
+    flex-flow: column wrap;
+  }  
+  .townPic {
+    max-width: 100%;
+  }
   nav ul:first-child {
     background: #3d3838;
     margin: .25rem 2%;
@@ -305,6 +353,42 @@ body {
       margin-top: 3em;
     margin-left: 1em;
   }
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 18px auto;
+    
+}
+
+.card img{
+    max-width: 52%;
+}
+.card .textDiv h2{
+    text-align: left;
+}
+
+.textDiv{
+    text-align: left;
+    max-width: 80%;
+    padding: 22px;
+    margin: 0 auto;
+}
+
+.card:nth-child(odd){
+    flex-direction: row-reverse;
+    
+}
+
+.card:nth-child(odd) .textDiv{
+    text-align: left;
+    padding-left: 10px
+    
+}
   
   .weathersummary {
    
@@ -368,6 +452,48 @@ margin-right: 0.01em;
     nav ul {
       flex-direction: row
     }
+    main {
+      max-width: 1000px;
+      padding: 20px;
+      margin: 0 auto;
+  }
+  .cards{
+    flex-direction: row;
+    margin: 0 auto;
+    
+}
+.Menu {
+  display: none
+}
+
+.card{
+    flex-direction: column;
+    margin: 15px;
+    
+}
+
+.card img{
+    max-width: 100%;
+}
+.card:nth-child(odd){
+    
+    flex-direction: column;
+
+}
+
+.card:nth-child(odd) .textDiv{
+    text-align: center;
+}
+
+.card .textDiv, .card .textDiv h2{
+    text-align: center;
+}
+
+
+  #class {
+    max-width: 35%;
+    float: right;
+  }
     .weathersummary {
    
       font-size: 1em;
