@@ -251,7 +251,7 @@ main {
 
 
 .footer-bar {
-  background-color: black;
+  background-color: white;
   padding: 30px;
 }
 
@@ -274,13 +274,13 @@ main {
       justify-content: center;
   }
   footer {
-    background:black;
+    background:white;
     max-width: 950px;
     align-content: center;
     margin: auto;
     display: flex;
     justify-content: center;
-    color:white;
+    color:black;
     
   }
   

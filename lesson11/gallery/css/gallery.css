@@ -140,13 +140,13 @@ margin-right: 0.01em;
   
   
   footer {
-    background:black;
+    background:white;
     max-width: 950px;
     align-content: center;
     margin: auto;
     display: flex;
     justify-content: center;
-    color:white;
+    color:black;
     
   }
   
