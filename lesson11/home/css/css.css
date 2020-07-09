@@ -10,6 +10,11 @@ body {
   h1, h2, h3, h4, h5, h6 {
     font-family: Cinzel;
   }
+  h1 {
+    font-size: 1em;
+    margin-top: 3em;
+    margin-left: 1em;
+  }
   nav{
     list-style-type: none;
     background: #302e2e;
@@ -61,19 +66,30 @@ body {
   #menu {
     justify-content: center;
   }
+  #logo {
+    max-width: 30%;
+  margin-top: 0.5em;
+  margin-right: 0.01em;
+  }
+  
+  header,
+  main {
+    align-content: center
+  }
   
   header {
-    background: rgb(238, 236, 250);
+    background:rgb(238, 236, 250);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-content: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
   }
+  
   #motto {
     font-family: Cinzel;
+    margin-left:2em;
   }
   .active {
     background-color: rgba(190, 188, 188, .2);
@@ -268,11 +284,27 @@ main {
 }
 
   @media only screen and (min-width: 32.5em) {
+    
     /* Home Page */
     .cards{
       flex-direction: column;
       justify-content: center;
-  }
+    }
+    #motto {
+      
+        margin-left:6em;
+      }
+      #logo {
+        max-width: 30%;
+    margin-top: 0.5em;
+    margin-right: 0.01em;
+    }
+  
+  h1 {
+    font-size: 2em;
+    margin-top: 3em;
+  margin-left: 1em;
+}
   footer {
     background:white;
     max-width: 950px;
@@ -365,10 +397,24 @@ main {
     }
 
 @media only screen and (min-width: 60em){
+  #logo {
+    max-width: 40%;
+margin-top: 0.5em;
+margin-right: 0em;
+}
+  #motto {
+      
+    margin-left:6em;
+  }
   main {
     max-width: 1000px;
     padding: 20px;
     margin: 0 auto;
+}
+h1 {
+  font-size: 2em;
+  margin-top: 3em;
+margin-left: 1em;
 }
     nav ul {
       flex-direction: row;
