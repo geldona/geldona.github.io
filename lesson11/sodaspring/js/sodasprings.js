@@ -57,7 +57,7 @@ fetch(apiURL)
     
             let events
             for (let i = 0; i < source.length; i++) {
-                if (source[i].name == "Soda Springs") {
+                if (source[i].name == "Fish Haven") {
                     events = source[i].events
                    
                     
