@@ -208,8 +208,7 @@ h4 {
 }
 
 p,
-li,
-a, figcaption {
+ figcaption {
     font-family: "Cinzel", sans-serif;
     
 }
