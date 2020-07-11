@@ -159,7 +159,7 @@ margin-right: 0.01em;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: #ebf0fa;
+    border-top: #7b7e83;
     
 }
 
@@ -419,7 +419,7 @@ h4{
 .forecast-days div {
     
     grid-row: 2/3;
-    background-color: #ebf0fa;
+    background-color: rgb(238, 236, 250);
     padding: 10px;
     margin:  10px;
     text-align: center;
