@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8cc80f462d0916f39d475a31d315920a"
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=8cc80f462d0916f39d475a31d315920a"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -20,7 +20,7 @@ fetch(apiURL)
 
 
 
-const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8cc80f462d0916f39d475a31d315920a"
+const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=8cc80f462d0916f39d475a31d315920a"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -57,7 +57,7 @@ fetch(apiURL)
     
             let events
             for (let i = 0; i < source.length; i++) {
-                if (source[i].name == "Fish Haven") {
+                if (source[i].name == "Soda Springs") {
                     events = source[i].events
                    
                     
